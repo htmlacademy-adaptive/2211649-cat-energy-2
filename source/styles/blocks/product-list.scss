@@ -1,0 +1,25 @@
+.product-list__link {
+  text-decoration: none;
+}
+
+.product-list__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.product-list__description {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.product-list__button--grey {
+  color: #444444;
+  background-color: #f2f2f2;
+}
