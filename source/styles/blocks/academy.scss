@@ -1,7 +1,38 @@
-.academy__text {
+.academy {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #444444;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../icons/stack.svg#academy");
+    mask-size: 27px 34px;
+    mask-repeat: no-repeat;
+    background-color: #666666;
+  }
+
+  &:hover,
+  &:focus {
+    color: $bg-basic-green;
+
+    &::before {
+      background-color: $bg-basic-green;
+    }
+  }
+
+  &:active {
+    color: rgba(104, 183, 56, 0.3);
+
+    &::before {
+      background-color: rgba(104, 183, 56, 0.3);
+    }
+  }
 }

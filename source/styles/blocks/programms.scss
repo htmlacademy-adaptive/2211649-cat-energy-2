@@ -1,5 +1,23 @@
+.programms__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 .programms__wrapper {
   background-color: #f2f2f2;
+}
+
+.programms__wrapper--slim {
+  background-image: url("../../icons/stack.svg#cat-slim");
+  background-repeat: no-repeat;
+  background-size: 50px 53px;
+}
+
+.programms__wrapper--mass {
+  background-image: url("../../icons/stack.svg#cat-mass");
+  background-repeat: no-repeat;
+  background-size: 67px 50px;
 }
 
 .programms__title {
@@ -9,6 +27,7 @@
   line-height: 37px;
   color: #000000;
   text-transform: uppercase;
+  padding-left: 90px;
 }
 
 .programms__link {
@@ -19,4 +38,21 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 12px;
+    background-color: currentColor;
+    mask-image: url("../../icons/stack.svg#arrow");
+    mask-repeat: no-repeat;
+    mask-position: 100%;
+    mask-size: 24px 12px;
+    margin-left: 15px;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }

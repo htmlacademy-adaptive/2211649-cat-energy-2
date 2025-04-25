@@ -1,3 +1,9 @@
+.product-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 .product-list__link {
   text-decoration: none;
 }
@@ -11,6 +17,10 @@
   text-transform: uppercase;
 }
 
+.product-list__title--add {
+  padding-top: 53px;
+}
+
 .product-list__description {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -22,4 +32,11 @@
 .product-list__button--grey {
   color: #444444;
   background-color: #f2f2f2;
+}
+
+.product-list__item--add {
+  background-image: url("../../icons/stack.svg#plus");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: top left;
 }

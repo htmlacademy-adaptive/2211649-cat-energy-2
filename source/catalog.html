@@ -15,8 +15,8 @@
       <div class="main-header__logo-container">
         <a class="main-header__logo logo" href="index.html">
           <picture>
-            <source width="60" height="50" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
-            <source width="70" height="59" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+            <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+            <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
             <img class="logo__img" src="images/logo-mobile.svg" width="33" height="38" alt="Logo">
           </picture>
           <picture>
@@ -27,7 +27,7 @@
         </a>
       </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle main-nav__toggle--close" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
@@ -227,7 +227,7 @@
             <button class="product-list__button button" type="button">Заказать</button>
           </li>
           <li class="product-list__item product-list__item--add">
-            <h3 class="product-list__title">Показать еще 10500 товаров</h3>
+            <h3 class="product-list__title product-list__title--add">Показать еще 10500 товаров</h3>
             <p class="product-list__description">На самом деле вкусов гораздо больше!</p>
             <button class="product-list__button button product-list__button--grey" type="button">Показать все</button>
           </li>
@@ -288,6 +288,16 @@
           <p class="invite__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
       </section>
+      <section class="map">
+        <div class="map__wrapper">
+          <h2 class="visually-hidden">Карта магазина</h2>
+          <picture>
+            <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+            <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+            <img class="map__image" src="images/map@1x.png" srcset="images/map@2x.png" width="320" height="362" alt="Адрес магазина на карте">
+          </picture>
+        </div>
+      </section>
     </div>
   </main>
 
@@ -307,10 +317,7 @@
           <a class="social__link social__link--telegram" href="https://t.me/s/htmlacademy">Мы в Телеграме</a>
         </li>
       </ul>
-      <a class="main-footer__academy academy" href="#">
-        <span class="academy__text">HTML Academy</span>
-        <img class="academy__image" src="images/html-logo.svg" width="27" height="34" alt="HTML Logo">
-      </a>
+      <a class="main-footer__academy academy" href="#">HTML Academy</a>
     </div>
   </footer>
 </body>

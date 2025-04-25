@@ -1,6 +1,5 @@
 .gift {
-  background-color: $bg-basic-green;
-  opacity: 85%;
+  background-color: rgba(104, 183, 56, 0.8);
 }
 
 .gift__text {
@@ -9,4 +8,15 @@
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-image: url("../../icons/stack.svg#gift");
+    mask-size: 80px 80px;
+    mask-repeat: no-repeat;
+    color: #ffffff;
+  }
 }

@@ -1,1 +1,42 @@
-// SCSS-файл
+.details__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.details__item {
+  padding-bottom: 20px;
+}
+
+.details__item--healthy {
+  background-image: url("../../icons/stack.svg#leaf");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  height: 60px;
+}
+
+.details__item--water {
+  background-image: url("../../icons/stack.svg#water");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  height: 60px;
+}
+
+.details__item--food {
+  background-image: url("../../icons/stack.svg#eat");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  height: 60px;
+}
+
+.details__item--result {
+  background-image: url("../../icons/stack.svg#clock");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  height: 60px;
+}
+
+.details__description {
+  display: block;
+  padding-left: 100px;
+}

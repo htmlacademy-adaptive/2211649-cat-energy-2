@@ -1,1 +1,62 @@
-// SCSS-файл
+.social {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.social__link {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  min-width: 28px;
+  min-height: 28px;
+  display: block;
+  color: #666666;
+
+  &:hover,
+  &:focus {
+    color: $bg-basic-green;
+  }
+
+  &:active {
+    color: rgba(104, 183, 56, 0.3);
+  }
+}
+
+.social__link--vkontakte {
+  &::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 22px;
+    mask-image: url("../../icons/stack.svg#vkontakte");
+    mask-size: 28px 22px;
+    mask-repeat: no-repeat;
+    background-color: currentColor;
+  }
+}
+
+.social__link--youtube {
+  &::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 22px;
+    mask-image: url("../../icons/stack.svg#youtube");
+    mask-size: 28px 22px;
+    mask-repeat: no-repeat;
+    background-color: currentColor;
+  }
+}
+
+.social__link--telegram {
+  &::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 22px;
+    mask-image: url("../../icons/stack.svg#telegram");
+    mask-size: 28px 22px;
+    mask-repeat: no-repeat;
+    background-color: currentColor;
+  }
+}
