@@ -9,3 +9,9 @@
 .title--white {
   color: #ffffff;
 }
+
+@media (min-width: $tablet-width) {
+  .title--white {
+    color: #000000;
+  }
+}

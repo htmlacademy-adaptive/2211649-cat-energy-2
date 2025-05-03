@@ -18,3 +18,20 @@
 .invite__wrapper--catalog {
   background-color: #f2f2f2;
 }
+
+
+@media (min-width: $tablet-width) {
+  .invite__wrapper {
+    width: 704px;
+    min-height: 150px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .invite__wrapper {
+    width: 1220px;
+    min-height: 50px;
+    margin: 0 auto;
+  }
+}

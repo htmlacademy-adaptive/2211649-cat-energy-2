@@ -10,3 +10,18 @@
   color: #ffffff;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .basic {
+    background-color: #ffffff;
+  }
+
+  .basic__wrapper {
+    width: 704px;
+    margin: 0 auto;
+  }
+
+  .basic__description {
+    color: #000000;
+  }
+}

@@ -28,3 +28,19 @@
   color: #000000;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .example__wrapper {
+    width: 704px;
+    margin: 0 auto;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+  }
+}

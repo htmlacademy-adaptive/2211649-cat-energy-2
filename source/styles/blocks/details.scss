@@ -40,3 +40,29 @@
   display: block;
   padding-left: 100px;
 }
+
+@media (min-width: $tablet-width) {
+  .details__wrapper {
+    width: 704px;
+    margin: 0 auto;
+  }
+
+  .details__list {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    gap: 47px 153px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .details__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .details__list {
+    display: grid;
+    grid-template-columns: 230px 230px 230px 230px;
+    gap: 94px;
+  }
+}

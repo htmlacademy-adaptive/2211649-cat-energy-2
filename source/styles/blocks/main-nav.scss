@@ -10,3 +10,19 @@
 .main-nav__toggle--close {
   background-image: url("../../icons/stack.svg#burger");
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    align-content: end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    background-color: rgba(104, 183, 56, 0.85);
+  }
+}

@@ -11,4 +11,24 @@
   line-height: 20px;
   color: #000000;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    width: 436px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 475px;
+  }
+
+  .site-list__link {
+    color: #ffffff;
+  }
 }

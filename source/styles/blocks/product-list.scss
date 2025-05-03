@@ -40,3 +40,26 @@
   background-size: 30px 30px;
   background-position: top left;
 }
+
+@media (min-width: $tablet-width) {
+  .product-list {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    gap: 60px;
+  }
+
+  .product-list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-list {
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    gap: 80px;
+  }
+}

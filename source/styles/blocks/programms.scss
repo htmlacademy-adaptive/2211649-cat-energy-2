@@ -56,3 +56,101 @@
     color: rgba(0, 0, 0, 0.3);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .programms__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 704px;
+    margin: 0 auto;
+  }
+
+  .programms__wrapper {
+    width: 708px;
+    min-height: 300px;
+    margin: 0 auto;
+  }
+
+  .programms__wrapper--slim {
+    background-image: url("../../icons/stack.svg#cat-slim");
+    background-repeat: no-repeat;
+    background-size: 200px 211px;
+    background-position: right;
+  }
+
+  .programms__wrapper--mass {
+    background-image: url("../../icons/stack.svg#cat-mass");
+    background-repeat: no-repeat;
+    background-size: 200px 211px;
+    background-position: right;
+    margin-top: 30px;
+  }
+
+  .programms__title {
+    padding-left: 53px;
+    padding-top: 72px;
+    margin: 0;
+  }
+
+  .programms__description {
+    width: 340px;
+    padding-left: 53px;
+    padding-top: 24px;
+    margin: 0;
+  }
+
+  .programms__link {
+    display: block;
+    padding-left: 53px;
+    padding-top: 48px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programms__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1220px;
+    justify-content: space-between;
+  }
+
+  .programms__wrapper {
+    width: 570px;
+    min-height: 300px;
+    margin: 0 auto;
+  }
+
+  .programms__wrapper--slim {
+    background-image: url("../../icons/stack.svg#cat-slim");
+    background-repeat: no-repeat;
+    background-size: 100px 106px;
+    background-position: left top;
+  }
+
+  .programms__wrapper--mass {
+    background-image: url("../../icons/stack.svg#cat-mass");
+    background-repeat: no-repeat;
+    background-size: 100px 106px;
+    background-position: left top;
+  }
+
+
+  .programms__title {
+    padding-left: 200px;
+    padding-top: 45px;
+    margin: 0;
+  }
+
+  .programms__description {
+    width: 475px;
+    padding-left: 52px;
+    padding-top: 73px;
+    margin: 0;
+  }
+
+  .programms__link {
+    display: block;
+    padding-left: 53px;
+    padding-top: 48px;
+  }
+}

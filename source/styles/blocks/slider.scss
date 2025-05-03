@@ -1,1 +1,14 @@
-// SCSS-файл
+@media (min-width: $tablet-width) {
+  .slider {
+    width: 704px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}

@@ -1,18 +1,18 @@
-.main-container___wrapper {
+.map__wrapper {
   width: 320px;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
-  .main-container___wrapper {
-    width: 768px;
+  .map__wrapper {
+    width: 770px;
     margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-container___wrapper {
-    width: 1220px;
+  .map__wrapper {
+    width: 1440px;
     margin: 0 auto;
   }
 }

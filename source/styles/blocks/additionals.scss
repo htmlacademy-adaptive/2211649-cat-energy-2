@@ -11,3 +11,11 @@
   margin: 0;
   list-style-type: none;
 }
+
+@media (min-width: $desktop-width) {
+  .additionals__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    gap: 80px;
+  }
+}

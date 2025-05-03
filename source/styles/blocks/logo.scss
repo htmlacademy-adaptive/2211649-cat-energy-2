@@ -1,1 +1,8 @@
 // SCSS-файл
+.logo__text {
+  padding-left: 56px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 13px;
+  }
+}

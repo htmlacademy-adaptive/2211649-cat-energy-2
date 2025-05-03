@@ -22,3 +22,21 @@
   color: #444444;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .promotion__wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    width: 632px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promotion__wrapper {
+    width: 752px;
+    margin: 0 auto;
+  }
+}
