@@ -6,18 +6,28 @@
 
 .programms__wrapper {
   background-color: #f2f2f2;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  padding-bottom: 18px;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .programms__wrapper--slim {
   background-image: url("../../icons/stack.svg#cat-slim");
   background-repeat: no-repeat;
   background-size: 50px 53px;
+  background-position: 20px 21px;
+  margin-bottom: 20px;
 }
 
 .programms__wrapper--mass {
   background-image: url("../../icons/stack.svg#cat-mass");
   background-repeat: no-repeat;
   background-size: 67px 50px;
+  background-position: 13px 24px;
+  margin-bottom: 20px;
 }
 
 .programms__title {
@@ -28,6 +38,25 @@
   color: #000000;
   text-transform: uppercase;
   padding-left: 90px;
+  padding-top: 30px;
+  padding-bottom: 29px;
+  margin: 0;
+}
+
+.programms__description {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+  width: 227px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 240px;
+    height: 1px;
+    background-color: #d9d9d9;
+    margin-top: 23px;
+  }
 }
 
 .programms__link {
@@ -38,17 +67,18 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+  padding-left: 20px;
 
   &::after {
     content: "";
     display: inline-block;
-    width: 24px;
-    height: 12px;
+    width: 32px;
+    height: 10px;
     background-color: currentColor;
     mask-image: url("../../icons/stack.svg#arrow");
     mask-repeat: no-repeat;
     mask-position: 100%;
-    mask-size: 24px 12px;
+    mask-size: 32px 10px;
     margin-left: 15px;
   }
 
@@ -75,34 +105,58 @@
     background-image: url("../../icons/stack.svg#cat-slim");
     background-repeat: no-repeat;
     background-size: 200px 211px;
-    background-position: right;
+    background-position: 445px 81px;
   }
 
   .programms__wrapper--mass {
-    background-image: url("../../icons/stack.svg#cat-mass");
+    background-image: url("../../icons/stack.svg#cat-mass-tablet");
     background-repeat: no-repeat;
-    background-size: 200px 211px;
-    background-position: right;
+    background-size: 268px 200px;
+    background-position: 411px 91px;
     margin-top: 30px;
   }
 
   .programms__title {
+    font-size: 36px;
+    line-height: 1;
     padding-left: 53px;
-    padding-top: 72px;
+    padding-top: 77px;
+    padding-bottom: 24px;
     margin: 0;
   }
 
   .programms__description {
+    font-size: 16px;
+    line-height: 24px;
     width: 340px;
     padding-left: 53px;
-    padding-top: 24px;
+    padding-bottom: 48px;
     margin: 0;
+
+    &::after {
+      content: none;
+    }
   }
 
   .programms__link {
+    font-size: 20px;
+    line-height: 1;
     display: block;
     padding-left: 53px;
-    padding-top: 48px;
+    padding-bottom: 53px;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 32px;
+      height: 16px;
+      background-color: currentColor;
+      mask-image: url("../../icons/stack.svg#arrow");
+      mask-repeat: no-repeat;
+      mask-position: 100%;
+      mask-size: 32px 12px;
+      margin-left: 25px;
+    }
   }
 }
 
@@ -118,39 +172,39 @@
     width: 570px;
     min-height: 300px;
     margin: 0 auto;
+    margin-bottom: 71px;
   }
 
   .programms__wrapper--slim {
     background-image: url("../../icons/stack.svg#cat-slim");
     background-repeat: no-repeat;
     background-size: 100px 106px;
-    background-position: left top;
+    background-position: 53px 41px;
   }
 
   .programms__wrapper--mass {
-    background-image: url("../../icons/stack.svg#cat-mass");
+    background-image: url("../../icons/stack.svg#cat-mass-tablet");
     background-repeat: no-repeat;
-    background-size: 100px 106px;
-    background-position: left top;
+    background-size: 134px 106px;
+    background-position: 33px 47px;
   }
-
 
   .programms__title {
     padding-left: 200px;
-    padding-top: 45px;
+    padding-top: 77px;
+    padding-bottom: 73px;
     margin: 0;
   }
 
   .programms__description {
     width: 475px;
     padding-left: 52px;
-    padding-top: 73px;
+    padding-bottom: 23px;
     margin: 0;
   }
 
   .programms__link {
     display: block;
     padding-left: 53px;
-    padding-top: 48px;
   }
 }

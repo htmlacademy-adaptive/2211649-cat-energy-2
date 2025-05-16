@@ -6,4 +6,13 @@
   color: #ffffff;
   background-color: $bg-basic-green;
   text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }

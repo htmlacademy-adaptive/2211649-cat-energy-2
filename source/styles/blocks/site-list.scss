@@ -2,9 +2,18 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+  z-index: 100;
+  width: 320px;
+  position: absolute;
+  background-color: #ffffff;
 }
 
 .site-list__link {
+  position: relative;
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  text-align: center;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -12,23 +21,57 @@
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  border-top: 1px solid #e6e6e6;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
-    width: 436px;
+    width: 476px;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 33px;
+    padding-top: 32px;
+    position: relative;
+  }
+
+  .site-list__link--current {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      background: $bg-basic-green;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-list {
-    width: 475px;
+    width: 476px;
+    background-color: $bg-basic-green;
   }
 
   .site-list__link {
     color: #ffffff;
+  }
+
+  .site-list__link--current::after {
+    background: #ffffff;
   }
 }

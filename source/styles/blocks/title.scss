@@ -4,6 +4,7 @@
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+  margin: 0;
 }
 
 .title--white {
@@ -11,6 +12,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
   .title--white {
     color: #000000;
   }

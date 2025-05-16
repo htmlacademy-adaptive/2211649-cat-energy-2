@@ -1,9 +1,19 @@
+.promotion__wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  width: 280px;
+  margin: 0 auto;
+}
+
 .promotion__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: #000000;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 32px;
 }
 
 .promotion__text {
@@ -12,6 +22,9 @@
   font-size: 16px;
   line-height: 24px;
   color: #000000;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 24px;
 }
 
 .promotion__input {
@@ -21,6 +34,34 @@
   line-height: auto;
   color: #444444;
   text-transform: uppercase;
+  padding: 13px;
+  width: 254px;
+  margin-bottom: 16px;
+  border: 1px solid #cdcdcd;
+}
+
+.promotion__button {
+  font-size: 20px;
+  line-height: 26px;
+  padding: 15px 84px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:focus {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -28,15 +69,60 @@
     display: flex;
     flex-flow: column wrap;
     width: 632px;
-    align-items: center;
     justify-content: center;
-    text-align: center;
+  }
+
+  .promotion__form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .promotion__title {
+    font-size: 32px;
+    line-height: 1;
+    text-align: left;
+    padding-bottom: 66px;
+  }
+
+  .promotion__text {
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 24px;
+  }
+
+  .promotion__text br {
+    display: none;
+  }
+
+  .promotion__button {
+    padding: 15px 70px;
+  }
+
+  .promotion__input {
+    margin-bottom: 0;
+    width: 344px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promotion__wrapper {
-    width: 752px;
+    width: 1220px;
     margin: 0 auto;
+  }
+
+  .promotion__title {
+    font-size: 40px;
+    line-height: 40px;
+    padding-top: 96px;
+    padding-bottom: 72px;
+  }
+
+  .promotion__form {
+    justify-content: center;
+    padding-bottom: 104px;
+  }
+
+  .promotion__input {
+    width: 470px;
   }
 }

@@ -1,8 +1,37 @@
 // SCSS-файл
-.logo__text {
-  padding-left: 56px;
+.logo__img {
+  padding-top: 13px;
+  padding-left: 20px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__text {
+  padding-bottom: 9px;
+  padding-left: 56px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
     padding-left: 13px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

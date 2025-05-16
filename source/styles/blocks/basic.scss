@@ -1,5 +1,49 @@
 .basic {
-  background-color: rgba(104, 183, 56, 0.85);
+  background: linear-gradient(to bottom, $bg-basic-green 63%, transparent 50%);
+}
+
+.basic__button {
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 64px;
+  border: none;
+  transform: translateX(7%);
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:focus {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.basic::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/cat-background-mobile.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.basic__wrapper {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
 }
 
 .basic__description {
@@ -9,19 +53,87 @@
   line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 29px;
+  margin: 0;
+}
+
+.basic__title {
+  text-align: center;
+  padding-top: 27px;
+  margin: 0;
+}
+
+.basic__logo {
+  padding-left: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .basic {
-    background-color: #ffffff;
+    background: #ffffff;
+  }
+
+  .basic::before {
+    background: none;
   }
 
   .basic__wrapper {
-    width: 704px;
+    position: relative;
+    width: 708px;
     margin: 0 auto;
+  }
+
+  .basic__title {
+    width: 416px;
+    text-align: left;
+    padding: 0;
+    padding-top: 69px;
+    padding-bottom: 40px;
+    padding-left: 100px;
   }
 
   .basic__description {
     color: #000000;
+    padding: 0;
+    padding-bottom: 21px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    padding-left: 100px;
+  }
+
+  .basic__logo {
+    padding: 0;
+  }
+
+  .basic__button {
+    position: absolute;
+    padding: 14px 26px;
+    top: 307px;
+    left: 85px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .basic__wrapper {
+    width: 1220px;
+    min-height: 551px;
+    margin-bottom: 82px;
+  }
+
+  .basic__title {
+    width: 416px;
+    padding-top: 110px;
+  }
+
+  .basic__button {
+    top: 338px;
+  }
+
+  .basic__logo {
+    position: absolute;
+    left: 430px;
+    top: 43px;
   }
 }

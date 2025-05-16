@@ -1,3 +1,14 @@
+.invite {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.invite__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 26px 20px;
+}
+
 .invite__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -5,6 +16,7 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .invite__description {
@@ -13,25 +25,58 @@
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+  margin: 0;
 }
 
 .invite__wrapper--catalog {
   background-color: #f2f2f2;
+  margin-top: 40px;
 }
 
-
 @media (min-width: $tablet-width) {
+  .invite {
+    width: 768px;
+  }
+
   .invite__wrapper {
-    width: 704px;
-    min-height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 768px;
+    padding: 0;
     margin: 0 auto;
+    margin-top: 80px;
+    padding-top: 60px;
+    padding-bottom: 61px;
+  }
+
+  .invite__title {
+    font-size: 20px;
+    line-height: 26px;
+    width: 163px;
+    padding-left: 70px;
+  }
+
+  .invite__description {
+    font-size: 16px;
+    font-weight: 20px;
+    width: 157px;
+    text-align: right;
+    padding-right: 70px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .invite {
+    position: relative;
+  }
+
   .invite__wrapper {
-    width: 1220px;
-    min-height: 50px;
-    margin: 0 auto;
+    position: absolute;
+    width: 565px;
+    background-color: #ffffff;
+    padding: 60px 80px;
+    left: 110px;
+    top: 95px;
   }
 }
