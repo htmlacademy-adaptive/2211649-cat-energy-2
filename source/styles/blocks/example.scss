@@ -176,12 +176,14 @@
   .example__title {
     background-color: #ffffff;
     padding: 0;
-    padding-bottom: 46px;
+    padding-bottom: 76px;
     padding-left: 110px;
   }
 
   .example__description {
     padding-left: 110px;
+    padding-top: 70px;
+    padding-bottom: 69px;
   }
 
   .example__results {
@@ -204,5 +206,6 @@
     position: static;
     padding-left: 110px;
     padding-top: 55px;
+    padding-bottom: 75px;
   }
 }

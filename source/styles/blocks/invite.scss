@@ -69,6 +69,9 @@
 @media (min-width: $desktop-width) {
   .invite {
     position: relative;
+    z-index: 1;
+    top: -82px;
+    left: -340px;
   }
 
   .invite__wrapper {

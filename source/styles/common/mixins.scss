@@ -7,3 +7,17 @@
     font-display: swap;
   }
 }
+
+@mixin list-resseting {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin font-setting($f-family: $primary-font, $f-size: 14px, $f-weight: 400, $f-height: 18px, $f-color: $f-main) {
+  font-family: $f-family;
+  font-size: $f-size;
+  font-weight: $f-weight;
+  line-height: $f-height;
+  color: $f-color;
+}

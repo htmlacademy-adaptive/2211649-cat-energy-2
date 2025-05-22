@@ -64,11 +64,33 @@
 @media (min-width: $desktop-width) {
   .site-list {
     width: 476px;
-    background-color: $bg-basic-green;
+    background: (rgba(104, 183, 56, 0.8));
+  }
+
+  .site-list--catalog {
+    background-color: #ffffff;
   }
 
   .site-list__link {
     color: #ffffff;
+  }
+
+  .site-list__link-catalog {
+    color: #000000;
+  }
+
+  .site-list__link-catalog--current {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      background: #000000;
+    }
   }
 
   .site-list__link--current::after {

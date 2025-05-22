@@ -1,9 +1,11 @@
 .map__wrapper {
   width: 320px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
 .map iframe {
+  display: none;
   border: none;
 }
 
@@ -41,8 +43,15 @@
 
 @media (min-width: $desktop-width) {
   .map__wrapper {
+    display: flex;
+    justify-content: flex-end;
     width: 1440px;
     margin: 0 auto;
+  }
+
+  map {
+    width: 600px;
+    height: 500px;
   }
 
   .map__tablet {

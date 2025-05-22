@@ -9,7 +9,7 @@
 }
 
 .main-header__logo-container {
-  min-height: 80px;
+  min-height: 65px;
 }
 
 @media (min-width: $tablet-width) {
@@ -28,6 +28,19 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-header--main {
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    background:
+      linear-gradient(rgba(104, 183, 56, 0.8), rgba(104, 183, 56, 0.8)),
+      url("/images/background-cat@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 720px 694px;
+    background-position: right;
+    min-height: 694px;
+  }
+
   .main-header__wrapper {
     width: 1220px;
     padding-top: 31px;

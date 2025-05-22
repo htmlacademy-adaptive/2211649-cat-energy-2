@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Cat Energy</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" defer></script>
   <script src="scripts/index.js" defer></script>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg">
@@ -14,7 +15,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header main-header--main">
     <div class="main-header__wrapper">
       <div class="main-header__logo-container">
         <a class="main-header__logo-container-link logo" href="index.html">
@@ -40,11 +41,6 @@
           <li class="site-list__item"><a class="site-list__link" href="#">Подбор Программы</a></li>
         </ul>
       </nav>
-    </div>
-  </header>
-
-  <main class="main-container">
-    <div class="main-container___wrapper">
       <section class="basic">
         <div class="basic__wrapper">
           <h1 class="basic__title title title--white">Функциональное питание для котов</h1>
@@ -57,6 +53,11 @@
           <button class="basic__button button" type="button">Подобрать программу</button>
         </div>
       </section>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <div class="main-container___wrapper">
       <section class="programms">
         <h2 class="visually-hidden">Программы</h2>
         <ul class="programms__list">
@@ -113,17 +114,34 @@
             </p>
           </div>
           <p class="example__price">Затраты на питание: <span>15 000 РУБ.</span></p>
-        </div>
-        <div class="example__container slider">
-          <picture>
-            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/catbig-tablet@1x.png 1x, images/catbig-tablet@1x.png 2x">
-            <img class="slider__image" src="images/catbig-mobile@1x.png" srcset="images/catbig-mobile@2x.png" width="280" height="256" alt="Полный кот">
-          </picture>
-          <picture>
-            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/catsmall-tablet@1x.png 1x, images/catsmall-tablet@1x.png 2x">
-            <img class="slider__image" src="images/cat-mobile@1x.png" srcset="images/cat-mobile@2x.png" width="280" height="256" alt="Худой кот">
-          </picture>
-          <button class="slider__button" type="button"><span class="visually-hidden">Передвинуть кота</span></button>
+          <div class="example__container slider">
+            <div class="slider__container">
+              <ul class="slider__images">
+                <li class="slider__image slider__image--before">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="images/catbig-tablet@1x.webp 1x, images/catbig-tablet@2x.webp 2x" width="560" height="512">
+                    <source type="image/webp" srcset="images/catbig-mobile@1x.webp 1x, images/catbig-mobile@2x.webp 2x">
+                    <source type="image/png" media="(min-width: 768px)" srcset="images/catbig-tablet@1x.png 1x, images/catbig-tablet@2x.png 2x" width="560" height="512">
+                    <img class="slider__before" src="images/catbig-mobile@1x.png" srcset="images/catbig-mobile@2x.png 2x" alt="Кот до приема cat Energy" width="280" height="256">
+                  </picture>
+                </li>
+                <li class="slider__image slider__image--after">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="images/catsmall-tablet@1x.webp 1x, images/catsmall-tablet@2x.webp 2x" width="560" height="512">
+                    <source type="image/webp" srcset="images/cat-mobile@1x.webp 1x, images/cat-mobile@2x.webp 2x">
+                    <source type="image/png" media="(min-width: 768px)" srcset="images/catsmall-tablet@1x.png 1x, images/catsmall-tablet@2x.png 2x" width="560" height="512">
+                    <img class="slider__after" src="images/cat-mobile@1x.png" srcset="images/cat-mobile@2x.png 2x" alt="Кот после приема cat Energy" width="280" height="256">
+                  </picture>
+                </li>
+              </ul>
+
+              <div class="slider__input">
+                <button class="slider__button" type="button">
+                  <span class="visually-hidden">Посмотреть изменения</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="invite">
@@ -136,9 +154,7 @@
     <section class="map">
       <div class="map__wrapper">
         <h2 class="visually-hidden">Карта магазина</h2>
-        <iframe class="map__mobile" src="https://yandex.ru/map-widget/v1/?um=constructor%3A107c0648d1a6e69e7c9ffb4d9a9676b505f6fcc2411290387ea552eab8977553&amp;source=constructor" width="320" height="362"></iframe>
-        <iframe class="map__tablet" src="https://yandex.ru/map-widget/v1/?um=constructor%3A107c0648d1a6e69e7c9ffb4d9a9676b505f6fcc2411290387ea552eab8977553&amp;source=constructor" width="768" height="400"></iframe>
-        <iframe class="map__desktop" src="https://yandex.ru/map-widget/v1/?um=constructor%3A107c0648d1a6e69e7c9ffb4d9a9676b505f6fcc2411290387ea552eab8977553&amp;source=constructor" width="1440" height="400"></iframe>
+        <div id="map" style="width: 100%; height: 400px;"></div>
       </div>
     </section>
   </main>

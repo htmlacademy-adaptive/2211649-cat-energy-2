@@ -35,7 +35,7 @@
   inset: 0;
   background-image: url("/images/cat-background-mobile.png");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: -1px 76px;
   opacity: 0.3;
   z-index: 0;
 }
@@ -116,6 +116,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .basic {
+    background: transparent;
+
+    &::before {
+      display: none;
+    }
+  }
+
   .basic__wrapper {
     width: 1220px;
     min-height: 551px;
