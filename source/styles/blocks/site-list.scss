@@ -71,7 +71,9 @@
 @media (min-width: $desktop-width) {
   .site-list {
     width: 476px;
-    background: (rgba(104, 183, 56, 0.8));
+    background: (rgba(104, 183, 56, 0.85));
+    top: 0;
+    left: 0;
   }
 
   .site-list--catalog {
