@@ -71,6 +71,7 @@
 
   &::after {
     content: "";
+    position: absolute;
     display: inline-block;
     width: 32px;
     height: 10px;
@@ -78,12 +79,19 @@
     mask-image: url("../../icons/stack.svg#arrow");
     mask-repeat: no-repeat;
     mask-position: 100%;
-    mask-size: 32px 10px;
-    margin-left: 15px;
+    mask-size: 32px 12px;
+    padding-left: 15px;
   }
 
   &:active {
     color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.programms__link--mass {
+  &::after {
+    width: 33px;
+    height: 15px;
   }
 }
 
@@ -105,32 +113,32 @@
     background-image: url("../../icons/stack.svg#cat-slim");
     background-repeat: no-repeat;
     background-size: 200px 211px;
-    background-position: 445px 81px;
+    background-position: 443px 83px;
   }
 
   .programms__wrapper--mass {
     background-image: url("../../icons/stack.svg#cat-mass-tablet");
     background-repeat: no-repeat;
     background-size: 268px 200px;
-    background-position: 411px 91px;
+    background-position: 410px 94px;
     margin-top: 30px;
   }
 
   .programms__title {
+    margin: 0;
+    padding-top: 79px;
+    padding-bottom: 24px;
+    padding-left: 50px;
     font-size: 36px;
     line-height: 1;
-    padding-left: 53px;
-    padding-top: 77px;
-    padding-bottom: 24px;
-    margin: 0;
   }
 
   .programms__description {
     font-size: 16px;
     line-height: 24px;
     width: 340px;
-    padding-left: 53px;
-    padding-bottom: 48px;
+    padding-left: 50px;
+    padding-bottom: 59px;
     margin: 0;
 
     &::after {
@@ -142,11 +150,12 @@
     font-size: 20px;
     line-height: 1;
     display: block;
-    padding-left: 53px;
-    padding-bottom: 53px;
+    padding-left: 50px;
+    padding-bottom: 40px;
 
     &::after {
       content: "";
+      position: absolute;
       display: inline-block;
       width: 32px;
       height: 16px;
@@ -155,7 +164,7 @@
       mask-repeat: no-repeat;
       mask-position: 100%;
       mask-size: 32px 12px;
-      margin-left: 25px;
+      padding-left: 25px;
     }
   }
 }

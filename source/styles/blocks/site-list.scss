@@ -44,6 +44,13 @@
     gap: 33px;
     padding-top: 32px;
     position: relative;
+    top: -16px;
+    left: 38px;
+  }
+
+  .site-list__link {
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .site-list__link--current {
@@ -53,7 +60,7 @@
       position: absolute;
       content: "";
       right: 0;
-      bottom: 0;
+      bottom: 14px;
       left: 0;
       height: 2px;
       background: $bg-basic-green;

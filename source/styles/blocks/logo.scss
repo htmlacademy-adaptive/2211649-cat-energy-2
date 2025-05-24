@@ -18,12 +18,14 @@
 
 .logo__text {
   padding-bottom: 9px;
-  padding-left: 56px;
+  padding-left: 52px;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-left: 13px;
+    padding-left: 7px;
+    position: relative;
+    top: -16px;
   }
 
   &:hover {

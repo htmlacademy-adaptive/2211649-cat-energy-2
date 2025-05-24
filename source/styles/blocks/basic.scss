@@ -35,7 +35,8 @@
   inset: 0;
   background-image: url("/images/cat-background-mobile.png");
   background-repeat: no-repeat;
-  background-position: -1px 76px;
+  background-position: 26px 65px;
+  background-size: auto;
   opacity: 0.3;
   z-index: 0;
 }
@@ -96,11 +97,11 @@
   .basic__description {
     color: #000000;
     padding: 0;
-    padding-bottom: 21px;
+    padding-bottom: 13px;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    padding-left: 100px;
+    padding-left: 90px;
   }
 
   .basic__logo {
@@ -110,8 +111,8 @@
   .basic__button {
     position: absolute;
     padding: 14px 26px;
-    top: 307px;
-    left: 85px;
+    top: 268px;
+    left: 74px;
   }
 }
 

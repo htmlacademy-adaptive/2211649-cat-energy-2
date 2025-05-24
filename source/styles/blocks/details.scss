@@ -14,6 +14,7 @@
 .details__title {
   margin: 0;
   padding-bottom: 40px;
+  padding-top: 4px;
 }
 
 .details__item {
@@ -52,8 +53,8 @@
 
 .details__description {
   display: block;
-  padding-left: 100px;
-  padding-top: 4px;
+  padding-top: 2px;
+  padding-left: 80px;
   width: 200px;
   margin: 0;
 }
@@ -66,7 +67,7 @@
   }
 
   .details__title {
-    padding-top: 45px;
+    padding-top: 48px;
     padding-bottom: 32px;
   }
 
@@ -81,8 +82,8 @@
   .details__item--healthy {
     background-image: url("../../icons/stack.svg#leaf"), url("/images/one.png");
     background-repeat: no-repeat, no-repeat;
-    background-size: 80px 80px, 52px 192px;
-    background-position: top 40px left, top 40px right 70px;
+    background-position: 0 39px, right 50px top 41px;
+    background-size: 80px 80px, 70px 227px;
     height: auto;
   }
 
@@ -118,7 +119,7 @@
   .details__description {
     width: 245px;
     padding: 0;
-    padding-top: 145px;
+    padding-top: 150px;
   }
 }
 
