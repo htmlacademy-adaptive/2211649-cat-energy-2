@@ -3,12 +3,12 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  color: #000000;
+  color: $f-secondary;
   margin: 0;
 }
 
 .title--white {
-  color: #ffffff;
+  color: $f-highlighted;
 }
 
 @media (min-width: $tablet-width) {
@@ -18,8 +18,15 @@
   }
 
   .title--white {
-    color: #000000;
+    color: $f-secondary;
     padding-top: 40px;
     padding-left: 90px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title--white {
+    padding-top: 90px;
+    padding-left: 80px;
   }
 }

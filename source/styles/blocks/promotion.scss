@@ -10,7 +10,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  color: #000000;
+  color: $f-secondary;
   margin: 0;
   padding-top: 40px;
   padding-bottom: 32px;
@@ -21,7 +21,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #000000;
+  color: $f-secondary;
   margin: 0;
   text-align: center;
   padding-bottom: 24px;
@@ -32,12 +32,26 @@
   font-weight: 400;
   font-size: 20px;
   line-height: auto;
-  color: #444444;
+  color: $f-main;
   text-transform: uppercase;
   padding: 13px;
   width: 254px;
-  margin-bottom: 16px;
-  border: 1px solid #cdcdcd;
+  margin-bottom: 14px;
+  border: 1px solid $bg-extra-scarce;
+
+  &:hover {
+    border: 1px solid $bg-secondary-dull;
+  }
+
+  &:focus {
+    border: 1px solid $f-main;
+    outline: none;
+  }
+
+  &:disabled {
+    border: 1px solid $error;
+    outline: none;
+  }
 }
 
 .promotion__button {
@@ -46,17 +60,17 @@
   padding: 15px 84px;
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: $bg-main-dim;
   }
 
   &:active {
-    background-color: #5eaa2f;
-    color: rgba(255, 255, 255, 0.3);
+    background-color: $bg-main-dim;
+    color: rgba($f-highlighted, 0.3);
   }
 
   &:focus {
-    background-color: #5eaa2f;
-    color: rgba(255, 255, 255, 0.3);
+    background-color: $bg-main-dim;
+    color: rgba($f-highlighted, 0.3);
   }
 
   &:disabled {
@@ -70,6 +84,7 @@
     flex-flow: column wrap;
     width: 632px;
     justify-content: center;
+    margin-bottom: 80px;
   }
 
   .promotion__form {
@@ -77,17 +92,45 @@
     flex-wrap: wrap;
   }
 
+  .promotion__title-wrapper {
+    position: relative;
+
+    &::before {
+      content: "";
+      background: #68b738;
+      width: calc(100vw - 49% - 40px);
+      height: 2px;
+      position: absolute;
+      top: 53%;
+      left: calc(32% + 40px);
+    }
+
+    &::after {
+      content: "";
+      background: $bg-main;
+      width: calc(100vw - 49% - 40px);
+      height: 2px;
+      position: absolute;
+      top: 53%;
+      right: calc(100% + 40px);
+    }
+  }
+
   .promotion__title {
+    display: inline-block;
     font-size: 32px;
     line-height: 1;
     text-align: left;
+    padding-top: 80px;
     padding-bottom: 66px;
+    width: 202px;
   }
 
   .promotion__text {
     font-size: 24px;
     line-height: 32px;
     padding-bottom: 24px;
+    width: 632px;
   }
 
   .promotion__text br {
@@ -96,11 +139,13 @@
 
   .promotion__button {
     padding: 15px 70px;
+    width: 256px;
   }
 
   .promotion__input {
     margin-bottom: 0;
     width: 344px;
+    padding: 12px 15px;
   }
 }
 
@@ -115,6 +160,34 @@
     line-height: 40px;
     padding-top: 96px;
     padding-bottom: 72px;
+    width: 253px;
+  }
+
+  .promotion__title-wrapper {
+    &::before {
+      content: "";
+      background: #68b738;
+      width: calc(100vw - 30% - 37px);
+      height: 2px;
+      position: absolute;
+      top: 55%;
+      left: calc(50% - 316px);
+    }
+
+    &::after {
+      content: "";
+      background: $bg-main;
+      width: calc(100vw - 49% - 40px);
+      height: 2px;
+      position: absolute;
+      top: 55%;
+      right: calc(100% + 40px);
+    }
+  }
+
+  .promotion__text {
+    width: 653px;
+    padding-left: 285px;
   }
 
   .promotion__form {
@@ -123,6 +196,6 @@
   }
 
   .promotion__input {
-    width: 470px;
+    width: 466px;
   }
 }

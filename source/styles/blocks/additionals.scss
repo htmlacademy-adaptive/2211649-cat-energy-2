@@ -13,19 +13,10 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  color: #000000;
+  color: $f-secondary;
   padding-left: 20px;
   padding-bottom: 36px;
   margin: 0;
-
-  &::before {
-    content: "";
-    display: block;
-    width: 280px;
-    height: 1px;
-    background-color: #d9d9d9;
-    margin-bottom: 25px;
-  }
 }
 
 .additionals__list {
@@ -40,8 +31,8 @@
     display: block;
     width: 280px;
     height: 1px;
-    background-color: #d9d9d9;
-    margin-bottom: 25px;
+    background-color: $bg-extra-sparse;
+    margin-bottom: 33px;
   }
 }
 
@@ -59,7 +50,7 @@
   }
 
   .additionals__item {
-    border: 1px solid #cdcdcd;
+    border: 1px solid $bg-secondary-dull;
   }
 
   .additionals__item:last-of-type {
@@ -72,15 +63,40 @@
     width: 708px;
   }
 
-  .additionals__title {
-    font-size: 32px;
-    line-height: 1;
-    padding-top: 74px;
+  .additionals__title-wrapper {
+    position: relative;
 
     &::before {
-      content: none;
+      content: "";
+      background: $bg-main;
+      width: calc(100vw - 49% - 40px);
+      height: 2px;
+      position: absolute;
+      top: 42%;
+      left: calc(48% + 40px);
+    }
+
+    &::after {
+      content: "";
+      background: $bg-main;
+      width: calc(100vw - 49% - 40px);
+      height: 2px;
+      position: absolute;
+      top: 42%;
+      right: calc(94% + 40px);
     }
   }
+
+  .additionals__title {
+    display: inline-block;
+    font-size: 32px;
+    line-height: 1;
+    padding-top: 55px;
+    padding-left: 40px;
+    padding-bottom: 80px;
+    width: 430px;
+  }
+
 
   .additionals__content {
     display: flex;
@@ -88,6 +104,7 @@
     width: 632px;
     justify-content: space-between;
     padding: 26px 38px;
+    padding-bottom: 11px;
   }
 }
 
@@ -113,8 +130,30 @@
     font-size: 40px;
     line-height: 1;
     padding: 0;
-    padding-top: 71px;
+    padding-top: 50px;
     padding-bottom: 80px;
+  }
+
+  .additionals__title-wrapper {
+    &::before {
+      content: "";
+      background: #68b738;
+      width: calc(100vw - 40% - 40px);
+      height: 2px;
+      position: absolute;
+      top: 40%;
+      left: calc(50% + -193px);
+    }
+
+    &::after {
+      content: "";
+      background: $bg-main;
+      width: calc(100vw - 49% - 40px);
+      height: 2px;
+      position: absolute;
+      top: 40%;
+      right: calc(100% + 40px);
+    }
   }
 
   .additionals__list {
@@ -123,7 +162,7 @@
   }
 
   .additionals__content {
-    padding: 0;
+    padding: 2px;
     padding-top: 25px;
     padding-bottom: 25px;
   }

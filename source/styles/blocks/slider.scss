@@ -7,7 +7,7 @@
     width: 100%;
     height: 462px;
     background-color: $bg-extra-dull;
-    margin-top: 250px;
+    margin-top: 214px;
 
     &::before {
       content: "";
@@ -22,7 +22,8 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 1380px;
+    top: 1450px;
+    left: 2px;
     padding: 0;
     background-color: transparent;
 
@@ -122,11 +123,11 @@
   }
 
   &:active {
-    border-color: rgba(94, 170, 47, 0.6);
+    border-color: rgba($bg-main-dim, 0.6);
 
     &::after {
-      background-color: rgba(94, 170, 47, 0.6);
-      box-shadow: 0 144px 0 0 rgba(94, 170, 47, 0.6);
+      background-color: rgba($bg-main-dim, 0.6);
+      box-shadow: 0 144px 0 0 rgba($bg-main-dim, 0.6);
     }
   }
 
@@ -145,7 +146,7 @@
 
     &:active {
       &::after {
-        box-shadow: 0 274px 0 0 rgba(94, 170, 47, 0.6);
+        box-shadow: 0 274px 0 0 rgba($bg-main-dim, 0.6);
       }
     }
   }

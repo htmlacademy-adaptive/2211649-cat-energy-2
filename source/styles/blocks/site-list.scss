@@ -5,7 +5,7 @@
   z-index: 100;
   width: 320px;
   position: absolute;
-  background-color: #ffffff;
+  background-color: $f-highlighted;
 }
 
 .site-list__link {
@@ -18,10 +18,10 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
-  color: #000000;
+  color: $f-secondary;
   text-decoration: none;
   text-transform: uppercase;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid $bg-extra-dim;
 
   &:hover {
     opacity: 0.6;
@@ -42,15 +42,14 @@
     width: 476px;
     flex-wrap: wrap;
     gap: 33px;
-    padding-top: 32px;
+    padding-top: 35px;
     position: relative;
-    top: -16px;
-    left: 38px;
   }
 
   .site-list__link {
     font-size: 18px;
-    line-height: 24px;
+    top: -16px;
+    left: 35px;
   }
 
   .site-list__link--current {
@@ -60,32 +59,11 @@
       position: absolute;
       content: "";
       right: 0;
-      bottom: 14px;
+      bottom: 12px;
       left: 0;
       height: 2px;
-      background: $bg-basic-green;
+      background: $bg-main;
     }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .site-list {
-    width: 476px;
-    background: (rgba(104, 183, 56, 0.85));
-    top: 0;
-    left: 0;
-  }
-
-  .site-list--catalog {
-    background-color: #ffffff;
-  }
-
-  .site-list__link {
-    color: #ffffff;
-  }
-
-  .site-list__link-catalog {
-    color: #000000;
   }
 
   .site-list__link-catalog--current {
@@ -95,14 +73,55 @@
       position: absolute;
       content: "";
       right: 0;
-      bottom: 0;
+      bottom: 14px;
       left: 0;
       height: 2px;
-      background: #000000;
+      background: $bg-main;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 476px;
+    background: unset;
+    padding-right: 36px;
+    padding-top: 38px;
+  }
+
+  .site-list--catalog {
+    background-color: $f-highlighted;
+  }
+
+  .site-list__link {
+    color: $f-highlighted;
+    font-size: 20px;
+    line-height: 1;
+
+    &::after {
+      bottom: 10px;
+    }
+  }
+
+  .site-list__link-catalog {
+    color: $f-secondary;
+  }
+
+  .site-list__link-catalog--current {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 11px;
+      left: 0;
+      height: 2px;
+      background: $bg-main;
     }
   }
 
   .site-list__link--current::after {
-    background: #ffffff;
+    background: $f-highlighted;
   }
 }

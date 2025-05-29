@@ -14,7 +14,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: $f-trifle;
   text-transform: uppercase;
   margin: 0;
 }
@@ -24,12 +24,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
+  color: $f-main;
   margin: 0;
 }
 
 .invite__wrapper--catalog {
-  background-color: #f2f2f2;
+  background-color: $bg-secondary;
   margin-top: 40px;
 }
 
@@ -45,9 +45,12 @@
     width: 768px;
     padding: 0;
     margin: 0 auto;
-    margin-top: 80px;
-    padding-top: 60px;
+    padding-top: 47px;
     padding-bottom: 61px;
+  }
+
+  .invite__wrapper--catalog {
+    padding-top: 60px;
   }
 
   .invite__title {
@@ -64,6 +67,11 @@
     text-align: right;
     padding-right: 70px;
   }
+
+  .invite__description span {
+    display: block;
+    padding-top: 19px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -77,9 +85,18 @@
   .invite__wrapper {
     position: absolute;
     width: 565px;
-    background-color: #ffffff;
-    padding: 60px 80px;
-    left: 110px;
-    top: 95px;
+    background-color: $f-highlighted;
+    padding: 60px 0;
+    left: 114px;
+    top: 177px;
+  }
+
+  .invite__title {
+    padding-left: 80px;
+  }
+
+  .invite__description {
+    text-align: left;
+    padding-right: 78px;
   }
 }

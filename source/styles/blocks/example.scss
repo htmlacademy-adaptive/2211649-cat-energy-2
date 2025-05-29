@@ -1,5 +1,5 @@
 .example__wrapper {
-  background-color: #f2f2f2;
+  background-color: $bg-secondary;
   width: 320px;
   margin: 0 auto;
   display: flex;
@@ -20,6 +20,10 @@
   width: 280px;
 }
 
+.example__description br {
+  display: none;
+}
+
 .example__results {
   display: flex;
   flex-wrap: wrap;
@@ -34,7 +38,7 @@
   position: relative;
   width: 124px;
   height: 70px;
-  background-color: #f2f2f2;
+  background-color: $bg-secondary;
   border-radius: 3px;
   display: flex;
   flex-direction: column;
@@ -46,7 +50,7 @@
     content: "";
     position: absolute;
     inset: 0 0 16px;
-    border: 1px solid #cdcdcd;
+    border: 1px solid $bg-secondary-dull;
     border-radius: 3px;
     pointer-events: none;
   }
@@ -54,7 +58,7 @@
   &::after {
     content: "";
     z-index: 0;
-    background-color: #f2f2f2;
+    background-color: $bg-secondary;
     width: 87px;
     height: 9px;
     position: absolute;
@@ -68,7 +72,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  color: #000000;
+  color: $f-secondary;
   text-transform: uppercase;
   padding-bottom: 7px;
   padding-top: 14px;
@@ -79,7 +83,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
-  color: #000000;
+  color: $f-secondary;
   text-transform: lowercase;
   text-align: center;
   z-index: 1;
@@ -90,7 +94,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #000000;
+  color: $f-secondary;
   text-transform: uppercase;
   margin: 0;
   text-align: center;
@@ -102,22 +106,25 @@
   .example__wrapper {
     width: 704px;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: $f-highlighted;
   }
 
   .example__title {
-    padding-top: 45px;
+    padding-top: 75px;
     padding-bottom: 60px;
+    padding-left: 0;
   }
 
   .example__description {
     width: 708px;
     padding-bottom: 55px;
+    padding-left: 0;
   }
 
   .example__results {
-    width: 369px;
+    width: 362px;
     margin: 0;
+    padding-left: 0;
   }
 
   .example__number {
@@ -125,16 +132,22 @@
     line-height: 37px;
     padding-top: 15px;
     padding-bottom: 11px;
+    width: 104px;
+  }
+
+  .example__number--five {
+    padding-left: 55px;
   }
 
   .example__text {
     font-size: 14px;
     line-height: 1;
+    width: 138px;
   }
 
   .example__result {
-    background-color: #ffffff;
-    width: 172px;
+    background-color: $f-highlighted;
+    width: 159px;
     height: 77px;
 
     &::before {
@@ -142,11 +155,11 @@
     }
 
     &::after {
-      background-color: #ffffff;
+      background-color: $f-highlighted;
       width: 132px;
       height: 9px;
       bottom: 0;
-      left: 18px;
+      left: 14px;
     }
 
     br {
@@ -159,10 +172,15 @@
     font-size: 20px;
     line-height: 1;
     width: 174px;
-    text-align: left;
-    bottom: 65px;
-    left: 564px;
+    text-align: end;
+    bottom: 67px;
+    left: 529px;
     padding: 0;
+  }
+
+  .example__price span {
+    display: block;
+    padding-top: 9px;
   }
 }
 
@@ -170,31 +188,37 @@
   .example__wrapper {
     width: 1440px;
     margin: 0 auto;
-    background-color: #f2f2f2;
+    background-color: $bg-secondary;
   }
 
   .example__title {
-    background-color: #ffffff;
+    background-color: $f-highlighted;
     padding: 0;
     padding-bottom: 76px;
     padding-left: 110px;
+    padding-top: 15px;
   }
 
   .example__description {
+    width: 436px;
     padding-left: 110px;
     padding-top: 70px;
     padding-bottom: 69px;
   }
 
+  .example__description br {
+    display: block;
+  }
+
   .example__results {
-    padding-left: 110px;
+    padding-left: 112px;
   }
 
   .example__result {
     background-color: inherit;
 
     &::after {
-      background-color: #f2f2f2;
+      background-color: $bg-secondary;
     }
   }
 
@@ -204,8 +228,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     position: static;
-    padding-left: 110px;
+    padding-left: 112px;
     padding-top: 55px;
     padding-bottom: 75px;
+  }
+
+  .example__price span {
+    padding-top: 0;
   }
 }

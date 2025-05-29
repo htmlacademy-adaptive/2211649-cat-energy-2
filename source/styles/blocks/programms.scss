@@ -5,7 +5,7 @@
 }
 
 .programms__wrapper {
-  background-color: #f2f2f2;
+  background-color: $bg-secondary;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
@@ -35,12 +35,13 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
-  color: #000000;
+  color: $f-secondary;
   text-transform: uppercase;
   padding-left: 90px;
   padding-top: 30px;
   padding-bottom: 29px;
   margin: 0;
+  width: 206px;
 }
 
 .programms__description {
@@ -54,7 +55,7 @@
     display: block;
     width: 240px;
     height: 1px;
-    background-color: #d9d9d9;
+    background-color: $bg-extra-sparse;
     margin-top: 23px;
   }
 }
@@ -64,10 +65,11 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #000000;
+  color: $f-secondary;
   text-transform: uppercase;
   text-decoration: none;
   padding-left: 20px;
+  width: 108px;
 
   &::after {
     content: "";
@@ -84,7 +86,7 @@
   }
 
   &:active {
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba($f-secondary, 0.3);
   }
 }
 
@@ -170,6 +172,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .programms {
+    margin-top: 83px;
+  }
+
   .programms__list {
     display: flex;
     flex-wrap: wrap;
@@ -195,11 +201,11 @@
     background-image: url("../../icons/stack.svg#cat-mass-tablet");
     background-repeat: no-repeat;
     background-size: 134px 106px;
-    background-position: 33px 47px;
+    background-position: 34px 43px;
   }
 
   .programms__title {
-    padding-left: 200px;
+    padding-left: 214px;
     padding-top: 77px;
     padding-bottom: 73px;
     margin: 0;
@@ -208,12 +214,13 @@
   .programms__description {
     width: 475px;
     padding-left: 52px;
-    padding-bottom: 23px;
+    padding-bottom: 32px;
     margin: 0;
   }
 
   .programms__link {
     display: block;
     padding-left: 53px;
+    padding-bottom: 45px;
   }
 }

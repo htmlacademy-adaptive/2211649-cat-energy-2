@@ -1,9 +1,14 @@
+.main-footer {
+  flex-shrink: 0;
+  width: 100%;
+}
+
 .main-footer__wrapper {
   display: flex;
   flex-flow: column wrap;
   width: 320px;
   margin: 0 auto;
-  background-color: #f2f2f2;
+  background-color: $bg-secondary;
 }
 
 .main-footer__logo {
@@ -15,7 +20,7 @@
     display: block;
     width: 280px;
     height: 1px;
-    background-color: #d9d9d9;
+    background-color: $bg-extra;
     margin-top: 16px;
     margin-left: 20px;
     margin-bottom: 20px;
@@ -37,6 +42,7 @@
     width: 768px;
     justify-content: space-between;
     margin: 0 auto;
+    padding-top: 41px;
   }
 
   .main-footer__logo {
@@ -46,11 +52,20 @@
       content: none;
     }
   }
+
+  .main-footer__logo--catalog {
+    padding-top: 58px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main-footer__wrapper {
     width: 1440px;
     margin: 0 auto;
+    padding-top: 57px;
+  }
+
+  .main-footer__logo {
+    padding: 53px 110px;
   }
 }
