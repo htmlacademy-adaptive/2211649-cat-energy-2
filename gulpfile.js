@@ -92,7 +92,7 @@ export function processScripts () {
 
 export function optimizeRaster () {
   const RAW_DENSITY = 2;
-  const TARGET_FORMATS = [undefined, 'webp']; // undefined — initial format: jpg or png
+  const TARGET_FORMATS = [undefined, 'webp'];
 
   function createOptionsFormat() {
     const formats = [];
@@ -119,7 +119,7 @@ export function optimizeRaster () {
 }
 
 export function optimizeVector () {
-  return src([`${PATH_TO_RAW}**/*.svg`])
+  return src([`${PATH_TO_RAW}/**/*.svg`])
     .pipe(svgo())
     .pipe(dest(PATH_TO_SOURCE));
 }

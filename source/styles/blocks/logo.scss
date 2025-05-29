@@ -1,0 +1,39 @@
+.logo__img {
+  padding-top: 13px;
+  padding-left: 20px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__text {
+  padding-bottom: 9px;
+  padding-left: 52px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-left: 7px;
+    position: relative;
+    top: -16px;
+    left: 2px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

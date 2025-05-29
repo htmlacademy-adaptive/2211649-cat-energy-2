@@ -1,0 +1,18 @@
+.main-container-catalog__wrapper {
+  margin: 0 auto;
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-container-catalog__wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-container-catalog__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}

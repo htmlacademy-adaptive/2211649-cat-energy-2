@@ -1,0 +1,161 @@
+.details__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.details__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.details__title {
+  margin: 0;
+  padding-bottom: 40px;
+  padding-top: 4px;
+}
+
+.details__item {
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+.details__item--healthy {
+  background-image: url("../../icons/stack.svg#leaf");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  height: 60px;
+}
+
+.details__item--water {
+  background-image: url("../../icons/stack.svg#water");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  height: 60px;
+}
+
+.details__item--food {
+  background-image: url("../../icons/stack.svg#eat");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  height: 60px;
+}
+
+.details__item--result {
+  background-image: url("../../icons/stack.svg#clock");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  height: 60px;
+  margin-bottom: 49px;
+  padding: 0;
+}
+
+.details__description {
+  display: block;
+  padding-top: 2px;
+  padding-left: 80px;
+  width: 200px;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .details__wrapper {
+    width: 708px;
+    margin: 0 auto;
+    border-bottom: solid $bg-extra-dim;
+  }
+
+  .details__title {
+    padding-top: 48px;
+    padding-bottom: 32px;
+    width: 375px;
+  }
+
+  .details__list {
+    display: grid;
+    grid-template-columns: 249px 249px;
+    grid-template-rows: 280px 280px;
+    gap: 38px 134px;
+    margin-bottom: 17px;
+  }
+
+  .details__item--healthy {
+    background-image: url("../../icons/stack.svg#leaf-tablet"), url("/images/one.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 42px, right 50px top 41px;
+    background-size: 80px 80px, 70px 227px;
+    height: auto;
+  }
+
+  .details__item--water {
+    background-image: url("../../icons/stack.svg#water-tablet"), url("/images/two.png");
+    background-position: 0 41px, right 15px top 38px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 80px 80px, 111px 231px;
+    height: auto;
+  }
+
+  .details__item--food {
+    background-image: url("../../icons/stack.svg#eat-tablet"), url("/images/three.png");
+    background-position: 0 40px, right 14px top 39px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 80px 80px, 113px 230px;
+    height: auto;
+  }
+
+  .details__item--result {
+    background-image: url("../../icons/stack.svg#clock-tablet"), url("/images/four.png");
+    background-position: 0 40px, right 4px top 42px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 80px 80px, 120px 225px;
+    height: auto;
+  }
+
+  .details__item {
+    margin: 0;
+    padding: 0;
+  }
+
+  .details__description {
+    width: 245px;
+    padding: 0;
+    padding-top: 153px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .details__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 69px;
+    border: none;
+  }
+
+  .details__title {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 32px;
+  }
+
+  .details__list {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    gap: 75px;
+    grid-template-rows: auto;
+    margin: 0;
+  }
+
+  .details__description {
+    padding-bottom: 40px;
+  }
+
+  .details__item {
+    width: 250px;
+  }
+
+  .details__item--healthy {
+    background-position: 0 40px, right 50px top 41px;
+  }
+}

@@ -1,0 +1,90 @@
+.gift {
+  background:
+    linear-gradient(rgba($bg-main, 0.8), rgba($bg-main, 0.8)),
+    url("/images/catalog-cat.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.gift__text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $f-highlighted;
+  margin: 0;
+  padding-bottom: 43px;
+  padding-top: 107px;
+  text-align: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-image: url("../../icons/stack.svg#gift");
+    mask-size: 80px 80px;
+    mask-repeat: no-repeat;
+    color: $f-highlighted;
+    position: relative;
+    left: 101px;
+    bottom: 48px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .gift {
+    display: flex;
+    background:
+      linear-gradient(rgba($bg-main, 0.8), rgba($bg-main, 0.8)),
+      url("/images/catalog-cat-tablet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 707px;
+    margin: 0 auto;
+  }
+
+  .gift__text {
+    position: relative;
+    top: -9px;
+    padding-top: 0;
+    padding-left: 421px;
+    padding-bottom: 60px;
+    text-align: left;
+    width: 161px;
+
+    &::before {
+      bottom: -67px;
+      left: -344px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    width: 245px;
+    display: flex;
+    background:
+      linear-gradient(rgba($bg-main, 0.8), rgba($bg-main, 0.8)),
+      url("/images/catalog-cat-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .gift__text {
+    text-align: center;
+    padding: 0;
+    padding-top: 80px;
+
+    &::before {
+      bottom: 48px;
+      left: 41px;
+    }
+  }
+}

@@ -1,1 +1,15 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее */
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", "Arial", sans-serif;
+  background-color: #ffffff;
+  height: 100%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}

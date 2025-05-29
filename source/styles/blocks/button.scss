@@ -1,0 +1,18 @@
+.button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $f-highlighted;
+  background-color: $bg-main;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

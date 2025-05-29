@@ -1,0 +1,81 @@
+.academy {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $f-main;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  width: 280px;
+  margin: 0 auto;
+  justify-content: space-between;
+  text-decoration: none;
+  margin-bottom: 29px;
+  margin-top: 34px;
+
+
+  &::before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../icons/stack.svg#academy");
+    mask-size: 27px 34px;
+    mask-repeat: no-repeat;
+    background-color: $f-average;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 280px;
+    height: 1px;
+    background-color: $bg-extra;
+    position: relative;
+    bottom: 65px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $bg-main;
+
+    &::before {
+      background-color: $bg-main;
+    }
+  }
+
+  &:active {
+    color: rgba($bg-main, 0.3);
+
+    &::before {
+      background-color: rgba($bg-main, 0.3);
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .academy {
+    position: relative;
+    right: 33px;
+    width: 160px;
+    margin: 0;
+
+    &::before {
+      position: relative;
+      top: 0;
+      right: -2px;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .academy {
+    right: 111px;
+  }
+}

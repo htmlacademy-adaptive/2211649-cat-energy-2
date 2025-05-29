@@ -1,0 +1,50 @@
+.main-header {
+  background-color: $f-highlighted;
+  color: $f-secondary;
+}
+
+.main-header__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-header__logo-container {
+  min-height: 65px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__wrapper {
+    display: flex;
+    width: 708px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .main-header__logo-container {
+    align-content: center;
+    width: 179px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header--main {
+    margin: 0 auto;
+    position: relative;
+    background:
+      linear-gradient(rgba($bg-main, 0.8), rgba($bg-main, 0.8)),
+      url("/images/background-cat@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover, 1024px 694px;
+    background-position: bottom left 50vw;
+  }
+
+  .main-header__wrapper {
+    width: 1220px;
+    padding-top: 31px;
+  }
+
+  .main-header__logo-container {
+    width: 206px;
+  }
+}

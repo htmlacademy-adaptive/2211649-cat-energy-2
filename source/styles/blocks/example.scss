@@ -1,0 +1,262 @@
+.example__wrapper {
+  background-color: $bg-secondary;
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.example__title {
+  margin: 0;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+  width: 195px;
+}
+
+.example__description {
+  margin: 0;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  width: 280px;
+}
+
+.example__description br {
+  display: none;
+}
+
+.example__results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  width: 280px;
+}
+
+.example__result {
+  position: relative;
+  width: 124px;
+  height: 70px;
+  background-color: $bg-secondary;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 16px;
+    border: 1px solid $bg-secondary-dull;
+    border-radius: 3px;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: "";
+    z-index: 0;
+    background-color: $bg-secondary;
+    width: 87px;
+    height: 9px;
+    position: absolute;
+    bottom: 13px;
+    left: 18px;
+  }
+}
+
+.example__number {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $f-secondary;
+  text-transform: uppercase;
+  padding-bottom: 7px;
+  padding-top: 14px;
+  overflow: hidden;
+}
+
+.example__text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: $f-secondary;
+  text-transform: lowercase;
+  text-align: center;
+  z-index: 1;
+}
+
+.example__price {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $f-secondary;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 65px;
+  width: 188px;
+}
+
+@media (min-width: $tablet-width) {
+  .example__wrapper {
+    width: 704px;
+    margin: 0 auto;
+    margin-top: 48px;
+    background-color: $f-highlighted;
+  }
+
+  .example__title {
+    padding-bottom: 60px;
+    padding-left: 0;
+    width: 325px;
+  }
+
+  .example__description {
+    width: 708px;
+    padding-bottom: 55px;
+    padding-left: 0;
+  }
+
+  .example__results {
+    width: 362px;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .example__number {
+    font-size: 30px;
+    line-height: 37px;
+    padding-top: 15px;
+    padding-bottom: 11px;
+    width: 104px;
+  }
+
+  .example__number--five {
+    padding-left: 55px;
+  }
+
+  .example__text {
+    font-size: 14px;
+    line-height: 1;
+    width: 138px;
+  }
+
+  .example__result {
+    background-color: $f-highlighted;
+    width: 159px;
+    height: 77px;
+
+    &::before {
+      inset: 0 0 4px;
+    }
+
+    &::after {
+      background-color: $f-highlighted;
+      width: 132px;
+      height: 9px;
+      bottom: 0;
+      left: 14px;
+    }
+
+    br {
+      display: none;
+    }
+  }
+
+  .example__price {
+    position: relative;
+    font-size: 20px;
+    line-height: 1;
+    width: 174px;
+    text-align: end;
+    bottom: 67px;
+    left: 529px;
+    padding: 0;
+  }
+
+  .example__price span {
+    display: block;
+    padding-top: 9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__wrapper {
+    width: 100%;
+    margin: 0;
+    background-color: $bg-secondary;
+    box-sizing: border-box;
+  }
+
+  .example__inner {
+    width: 1440px;
+    margin: 0 auto;
+    background-color: $bg-secondary;
+    position: relative;
+  }
+
+  .example__fonts {
+    width: 100%;
+    background-color: $f-highlighted;
+  }
+
+  .example__font {
+    width: 1440px;
+    margin: 0 auto;
+  }
+
+  .example__title {
+    background-color: $f-highlighted;
+    padding: 0;
+    padding-bottom: 76px;
+    padding-left: 110px;
+    padding-top: 15px;
+  }
+
+  .example__description {
+    width: 436px;
+    padding-left: 110px;
+    padding-top: 70px;
+    padding-bottom: 69px;
+  }
+
+  .example__description br {
+    display: block;
+  }
+
+  .example__results {
+    padding-left: 112px;
+  }
+
+  .example__result {
+    background-color: inherit;
+
+    &::after {
+      background-color: $bg-secondary;
+    }
+  }
+
+  .example__price {
+    display: flex;
+    width: 325px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: static;
+    padding-left: 112px;
+    padding-top: 55px;
+    padding-bottom: 75px;
+  }
+
+  .example__price span {
+    padding-top: 0;
+  }
+}

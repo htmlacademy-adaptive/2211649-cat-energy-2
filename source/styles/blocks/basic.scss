@@ -1,0 +1,158 @@
+.basic {
+  background: linear-gradient(to bottom, $bg-main 63%, transparent 50%);
+}
+
+.basic__button {
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 64px;
+  border: none;
+  transform: translateX(7%);
+  cursor: pointer;
+  width: 280px;
+
+  &:hover {
+    background-color: $bg-main-dim;
+  }
+
+  &:active {
+    background-color: $bg-main-dim;
+    color: rgba($f-highlighted, 0.3);
+  }
+
+  &:focus {
+    background-color: $bg-main-dim;
+    color: rgba($f-highlighted, 0.3);
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.basic::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/cat-background-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 26px 65px;
+  background-size: auto;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.basic__wrapper {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.basic__description {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $f-highlighted;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 25px;
+  padding-left: 60px;
+  padding-bottom: 29px;
+  margin: 0;
+  width: 200px;
+}
+
+.basic__title {
+  text-align: center;
+  padding-top: 27px;
+  margin: 0;
+}
+
+.basic__logo {
+  padding-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .basic {
+    background: $f-highlighted;
+  }
+
+  .basic::before {
+    background: none;
+  }
+
+  .basic__wrapper {
+    position: relative;
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .basic__title {
+    width: 416px;
+    text-align: left;
+    padding: 0;
+    padding-top: 69px;
+    padding-bottom: 40px;
+    padding-left: 100px;
+  }
+
+  .basic__description {
+    color: $f-secondary;
+    padding: 0;
+    padding-bottom: 13px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    padding-left: 90px;
+    width: 283px;
+  }
+
+  .basic__logo {
+    padding: 0;
+  }
+
+  .basic__button {
+    position: absolute;
+    padding: 14px 26px;
+    top: 268px;
+    left: 74px;
+    width: 242px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .basic {
+    background: transparent;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .basic__wrapper {
+    width: 1220px;
+    min-height: 559px;
+  }
+
+  .basic__title {
+    width: 416px;
+    padding-top: 110px;
+  }
+
+  .basic__description {
+    padding-left: 80px;
+  }
+
+  .basic__button {
+    position: absolute;
+    top: 321px;
+    left: 64px;
+  }
+
+  .basic__logo {
+    position: absolute;
+    left: 448px;
+    top: 9px;
+  }
+}
