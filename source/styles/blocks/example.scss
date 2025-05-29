@@ -11,6 +11,7 @@
   padding-top: 25px;
   padding-left: 20px;
   padding-bottom: 40px;
+  width: 195px;
 }
 
 .example__description {
@@ -106,13 +107,19 @@
   .example__wrapper {
     width: 704px;
     margin: 0 auto;
+    margin-top: 48px;
     background-color: $f-highlighted;
   }
 
   .example__title {
-    padding-top: 75px;
     padding-bottom: 60px;
     padding-left: 0;
+    width: 325px;
+  }
+
+  .example__font {
+    width: 100%;
+    background-color: $f-highlighted;
   }
 
   .example__description {
@@ -186,9 +193,17 @@
 
 @media (min-width: $desktop-width) {
   .example__wrapper {
+    width: 100%;
+    margin: 0;
+    background-color: $bg-secondary;
+    box-sizing: border-box;
+  }
+
+  .example__inner {
     width: 1440px;
     margin: 0 auto;
     background-color: $bg-secondary;
+    position: relative;
   }
 
   .example__title {

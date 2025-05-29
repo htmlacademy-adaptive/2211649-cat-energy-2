@@ -59,6 +59,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-footer {
+    background-color: $bg-secondary;
+  }
+
   .main-footer__wrapper {
     width: 1440px;
     margin: 0 auto;
