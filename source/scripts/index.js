@@ -17,8 +17,23 @@ navToggle.addEventListener('click', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   ymaps.ready(() => {
-    const correctCoords = [59.938679, 30.323044];
+    const mapElement = document.getElementById('map');
+    if (!mapElement) {
+      return;
+    }
 
+    function setMapHeight() {
+      if (window.innerWidth >= 768) {
+        mapElement.style.height = '400px';
+      } else {
+        mapElement.style.height = '362px';
+      }
+    }
+
+    setMapHeight();
+    window.addEventListener('resize', setMapHeight);
+
+    const correctCoords = [59.938679, 30.323044];
     let mapCenter = correctCoords;
 
     if (window.innerWidth >= 1024) {
@@ -49,6 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     myMap.geoObjects.add(myPlacemark);
+
+    window.addEventListener('resize', () => {
+      myMap.container.fitToViewport();
+    });
   });
 });
 
