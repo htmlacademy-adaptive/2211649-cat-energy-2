@@ -8,8 +8,6 @@
   <link rel="stylesheet" href="styles/styles.css">
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" defer></script>
   <script src="scripts/index.js" defer></script>
-  <link rel="preload" href="styles/styles.css" as="style" crossorigin="anonymous">
-  <link rel="preload" href="scripts/index.js" as="script" crossorigin="anonymous">
   <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
 </head>
@@ -38,7 +36,7 @@
         <ul class="main-nav__list site-list site-list--catalog">
           <li class="site-list__item"><a class="site-list__link site-list__link-catalog" href="index.html">Главная</a></li>
           <li class="site-list__item"><a class="site-list__link site-list__link-catalog site-list__link-catalog--current site-list__link-current" href="#">Каталог Продукции</a></li>
-          <li class="site-list__item"><a class="site-list__link site-list__link-catalog" href="program.html">Подбор Программы</a></li>
+          <li class="site-list__item"><a class="site-list__link site-list__link-catalog" href="#">Подбор Программы</a></li>
         </ul>
       </nav>
     </div>
@@ -305,12 +303,14 @@
           <div class="promotion__title-wrapper">
             <h2 class="promotion__title">Акции и новинки</h2>
           </div>
-          <p class="promotion__text">Подпишитесь на наши новости и не<br> пропустите ни одного предложения!</p>
-          <form class="promotion__form" action="#" method="post">
-            <label class="promotion__label visually-hidden" for="email"></label>
-            <input class="promotion__input" type="text" id="email" name="email" placeholder="kuklachev@gmail.com" required>
-            <button class="promotion__button button" type="submit">Подписаться</button>
-          </form>
+          <div class="promotion__container">
+            <p class="promotion__text">Подпишитесь на наши новости и не<br> пропустите ни одного предложения!</p>
+            <form class="promotion__form" action="#" method="post">
+              <label class="promotion__label visually-hidden" for="email">Введите e-mail</label>
+              <input class="promotion__input" type="text" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+              <button class="promotion__button button" type="submit">Подписаться</button>
+            </form>
+          </div>
         </div>
       </section>
       <section class="invite">

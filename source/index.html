@@ -12,8 +12,6 @@
   <link rel="icon" href="favicons/icon.svg">
   <link rel="apple-touch-icon" href="favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="styles/styles.css" as="style" crossorigin="anonymous">
-  <link rel="preload" href="scripts/index.js" as="script" crossorigin="anonymous">
   <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
 </head>
@@ -36,16 +34,18 @@
             </picture>
           </a>
         </div>
-        <nav class="main-nav main-nav--close main-nav--nojs">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a class="site-list__link site-list__link--current" href="#">Главная</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог Продукции</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="program.html">Подбор Программы</a></li>
-          </ul>
-        </nav>
+        <div class="main-header__nav-container">
+          <nav class="main-nav main-nav--close main-nav--nojs">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item"><a class="site-list__link site-list__link--current" href="#">Главная</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог Продукции</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="#">Подбор Программы</a></li>
+            </ul>
+          </nav>
+        </div>
         <section class="basic" data-test="hero">
           <div class="basic__wrapper">
             <h1 class="basic__title title title--white">Функциональное питание для котов</h1>
@@ -111,19 +111,21 @@
               </div>
             </div>
             <div class="example__inner">
-              <p class="example__description basic-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат<br> без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-              </p>
-              <div class="example__results">
-                <p class="example__result">
-                  <span class="example__number example__number--five">5 кг</span>
-                  <span class="example__text">Снижение<br> веса</span>
+              <div class="example__content">
+                <p class="example__description basic-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат<br class="example__br"> без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
                 </p>
-                <p class="example__result">
-                  <span class="example__number">60 дней</span>
-                  <span class="example__text">Затрачено<br> времени</span>
-                </p>
+                <div class="example__results">
+                  <p class="example__result">
+                    <span class="example__number example__number--five">5 кг</span>
+                    <span class="example__text">Снижение<br class="example__br"> веса</span>
+                  </p>
+                  <p class="example__result">
+                    <span class="example__number">60 дней</span>
+                    <span class="example__text">Затрачено<br class="example__br"> времени</span>
+                  </p>
+                </div>
+                <p class="example__price">Затраты на питание: <span class="example__mod">15 000 РУБ.</span></p>
               </div>
-              <p class="example__price">Затраты на питание: <span>15 000 РУБ.</span></p>
               <div class="example__container slider">
                 <div class="slider__container">
                   <ul class="slider__images">

@@ -1,11 +1,10 @@
 .main-container___wrapper {
-  width: 320px;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .main-container___wrapper {
-    width: 768px;
+    width: 100%;
     margin: 0 auto;
   }
 }

@@ -1,0 +1,14 @@
+.fonts {
+  position: relative;
+
+  &::before {
+    content: "";
+    box-sizing: border-box;
+    border: 1px solid $bg-main;
+    width: 100%;
+    position: absolute;
+    top: 11px;
+    margin: 0;
+    padding: 0;
+  }
+}

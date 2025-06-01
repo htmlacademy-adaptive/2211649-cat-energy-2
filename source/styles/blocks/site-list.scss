@@ -83,7 +83,7 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    width: 476px;
+    width: 510px;
     background: unset;
     padding-right: 36px;
     padding-top: 38px;
@@ -91,6 +91,7 @@
 
   .site-list--catalog {
     background-color: $f-highlighted;
+    padding-right: 3px;
   }
 
   .site-list__link {
