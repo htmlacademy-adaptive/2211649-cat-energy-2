@@ -1,3 +1,13 @@
+.logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .logo__img {
   padding-top: 13px;
   padding-left: 20px;
@@ -5,14 +15,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-  }
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
+    position: relative;
+    right: 19px;
   }
 }
 
@@ -26,14 +30,6 @@
     padding-left: 7px;
     position: relative;
     top: -16px;
-    left: 2px;
-  }
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
+    left: -17px;
   }
 }

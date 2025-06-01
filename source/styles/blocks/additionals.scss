@@ -36,6 +36,20 @@
   }
 }
 
+.additionals__title-wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    background: $bg-main;
+    width: calc(100vw - 76% - 40px);
+    height: 2px;
+    position: absolute;
+    top: 17%;
+    left: calc(76% + 40px);
+  }
+}
+
 @media (min-width: $tablet-width) {
   .additionals {
     width: 708px;
@@ -69,7 +83,7 @@
     &::before {
       content: "";
       background: $bg-main;
-      width: calc(100vw - 49% - 40px);
+      width: calc(100vw - 37% - 40px);
       height: 2px;
       position: absolute;
       top: 42%;

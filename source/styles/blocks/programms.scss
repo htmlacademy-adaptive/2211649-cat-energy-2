@@ -70,19 +70,23 @@
   text-decoration: none;
   padding-left: 20px;
   width: 108px;
+  position: relative;
 
   &::after {
     content: "";
     position: absolute;
     display: inline-block;
     width: 32px;
-    height: 10px;
+    height: 12px;
     background-color: currentColor;
     mask-image: url("../../icons/stack.svg#arrow");
     mask-repeat: no-repeat;
     mask-position: 100%;
     mask-size: 32px 12px;
-    padding-left: 15px;
+  }
+
+  &:hover::after {
+    transform: scale(1.5);
   }
 
   &:active {
@@ -217,11 +221,5 @@
     padding-left: 52px;
     padding-bottom: 32px;
     margin: 0;
-  }
-
-  .programms__link {
-    display: block;
-    padding-left: 53px;
-    padding-bottom: 45px;
   }
 }

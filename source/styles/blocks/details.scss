@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+  counter-reset: item;
 }
 
 .details__wrapper {
@@ -20,6 +21,20 @@
 .details__item {
   padding-bottom: 20px;
   overflow: hidden;
+  position: relative;
+
+  &::before {
+    font-family: "Oswald", sans-serif;
+    counter-increment: item;
+    content: counter(item);
+    position: absolute;
+    top: 0;
+    right: 21px;
+    font-size: 280px;
+    line-height: 1;
+    color: $bg-secondary;
+    z-index: 1;
+  }
 }
 
 .details__item--healthy {
@@ -34,6 +49,10 @@
   background-repeat: no-repeat;
   background-size: 60px 60px;
   height: 60px;
+
+  &::before {
+    right: 0;
+  }
 }
 
 .details__item--food {
@@ -41,6 +60,10 @@
   background-repeat: no-repeat;
   background-size: 60px 60px;
   height: 60px;
+
+  &::before {
+    right: 0;
+  }
 }
 
 .details__item--result {
@@ -50,6 +73,10 @@
   height: 60px;
   margin-bottom: 49px;
   padding: 0;
+
+  &::before {
+    right: 0;
+  }
 }
 
 .details__description {
@@ -82,7 +109,7 @@
   }
 
   .details__item--healthy {
-    background-image: url("../../icons/stack.svg#leaf-tablet"), url("/images/one.png");
+    background-image: url("../../icons/stack.svg#leaf-tablet");
     background-repeat: no-repeat, no-repeat;
     background-position: 0 42px, right 50px top 41px;
     background-size: 80px 80px, 70px 227px;
@@ -90,7 +117,7 @@
   }
 
   .details__item--water {
-    background-image: url("../../icons/stack.svg#water-tablet"), url("/images/two.png");
+    background-image: url("../../icons/stack.svg#water-tablet");
     background-position: 0 41px, right 15px top 38px;
     background-repeat: no-repeat, no-repeat;
     background-size: 80px 80px, 111px 231px;
@@ -98,7 +125,7 @@
   }
 
   .details__item--food {
-    background-image: url("../../icons/stack.svg#eat-tablet"), url("/images/three.png");
+    background-image: url("../../icons/stack.svg#eat-tablet");
     background-position: 0 40px, right 14px top 39px;
     background-repeat: no-repeat, no-repeat;
     background-size: 80px 80px, 113px 230px;
@@ -106,7 +133,7 @@
   }
 
   .details__item--result {
-    background-image: url("../../icons/stack.svg#clock-tablet"), url("/images/four.png");
+    background-image: url("../../icons/stack.svg#clock-tablet");
     background-position: 0 40px, right 4px top 42px;
     background-repeat: no-repeat, no-repeat;
     background-size: 80px 80px, 120px 225px;

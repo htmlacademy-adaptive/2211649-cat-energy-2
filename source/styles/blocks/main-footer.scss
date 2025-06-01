@@ -1,6 +1,7 @@
 .main-footer {
   flex-shrink: 0;
-  width: 100%;
+  width: 100vw;
+  background-color: $bg-secondary;
 }
 
 .main-footer__wrapper {
@@ -27,7 +28,7 @@
   }
 
   &:hover {
-    opacity: 0.6;
+    opacity: 0.8;
   }
 
   &:active {

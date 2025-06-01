@@ -4,18 +4,24 @@
 }
 
 .main-header__wrapper {
-  width: 320px;
   margin: 0 auto;
 }
 
 .main-header__logo-container {
   min-height: 65px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-header__nav-container {
+  width: 320px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .main-header__wrapper {
     display: flex;
-    width: 708px;
+    width: 704px;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
@@ -24,6 +30,10 @@
   .main-header__logo-container {
     align-content: center;
     width: 179px;
+  }
+
+  .main-header__nav-container {
+    width: 458px;
   }
 }
 
@@ -46,5 +56,11 @@
 
   .main-header__logo-container {
     width: 206px;
+    margin-left: 19px;
+  }
+
+  .main-header__nav-container {
+    width: 500px;
+    margin-left: 467px;
   }
 }

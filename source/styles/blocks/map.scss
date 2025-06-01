@@ -1,5 +1,5 @@
 .map__wrapper {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -17,7 +17,6 @@
 
 @media (min-width: $tablet-width) {
   .map__wrapper {
-    width: 770px;
     margin: 0 auto;
     height: 400px;
   }
