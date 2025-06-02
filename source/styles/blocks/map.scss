@@ -1,6 +1,11 @@
 .map__wrapper {
   width: 100%;
   margin: 0 auto;
+  position: relative;
+  background: url("/images/map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 320px 362px;
+  background-position: center;
 }
 
 .map__mobile {
@@ -19,6 +24,10 @@
   .map__wrapper {
     margin: 0 auto;
     height: 400px;
+    background: url("/images/map-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: 768px 400px;
+    background-position: center;
   }
 
   .map__mobile {
@@ -33,6 +42,10 @@
 @media (min-width: $desktop-width) {
   .map__wrapper {
     width: 100%;
+    background: url("/images/map-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 1440px 400px;
+    background-position: center;
   }
 
   .map__tablet {
