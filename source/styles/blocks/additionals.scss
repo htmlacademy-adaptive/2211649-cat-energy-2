@@ -83,7 +83,7 @@
     &::before {
       content: "";
       background: $bg-main;
-      width: calc(100vw - 37% - 40px);
+      width: calc(100vw - 53% - 35px);
       height: 2px;
       position: absolute;
       top: 42%;
@@ -151,7 +151,7 @@
   .additionals__title-wrapper {
     &::before {
       content: "";
-      background: #68b738;
+      background: $bg-main;
       width: calc(100vw - 40% - 40px);
       height: 2px;
       position: absolute;
