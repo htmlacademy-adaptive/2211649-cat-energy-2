@@ -22,19 +22,6 @@
   padding-bottom: 20px;
   overflow: hidden;
   position: relative;
-
-  &::before {
-    font-family: "Oswald", sans-serif;
-    counter-increment: item;
-    content: counter(item);
-    position: absolute;
-    top: 0;
-    right: 21px;
-    font-size: 280px;
-    line-height: 1;
-    color: $bg-secondary;
-    z-index: -1;
-  }
 }
 
 .details__item--healthy {
@@ -140,6 +127,19 @@
     margin: 0;
     padding: 0;
     background-position: left top 40px;
+
+    &::before {
+      font-family: "Oswald", sans-serif;
+      counter-increment: item;
+      content: counter(item);
+      position: absolute;
+      top: 0;
+      right: 21px;
+      font-size: 280px;
+      line-height: 1;
+      color: $bg-secondary;
+      z-index: -1;
+    }
   }
 
   .details__description {
@@ -180,8 +180,3 @@
     background-position: left top 45px;
   }
 }
-
-//   .details__item--healthy {
-//     background-position: 0 40px, right 50px top 41px;
-//   }
-// }
