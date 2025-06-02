@@ -81,12 +81,18 @@
     background-color: currentColor;
     mask-image: url("../../icons/stack.svg#arrow");
     mask-repeat: no-repeat;
-    mask-position: 100%;
+    mask-position: right center;
     mask-size: 32px 12px;
+    margin-left: 16px;
   }
 
   &:hover::after {
-    transform: scale(1.5);
+    transform: scale(1.2);
+  }
+
+  &:active::after {
+    transform: scale(1.2);
+    color: rgba($f-secondary, 0.3);
   }
 
   &:active {
@@ -172,6 +178,7 @@
       mask-position: 100%;
       mask-size: 32px 12px;
       padding-left: 25px;
+      margin-left: 0;
     }
   }
 }

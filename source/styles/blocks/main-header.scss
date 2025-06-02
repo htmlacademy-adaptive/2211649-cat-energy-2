@@ -47,6 +47,15 @@
     background-repeat: no-repeat;
     background-size: cover, 1024px 694px;
     background-position: bottom left 50vw;
+
+    @media (min-resolution: 2dppx) {
+      background:
+        linear-gradient(rgba($bg-main, 0.8), rgba($bg-main, 0.8)),
+        url("/images/background-cat@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: cover, 1024px 694px;
+      background-position: bottom left 50vw;
+    }
   }
 
   .main-header__wrapper {

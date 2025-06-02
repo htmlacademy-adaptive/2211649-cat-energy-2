@@ -6,6 +6,15 @@
   background-repeat: no-repeat;
   background-size: cover, 320px 302px;
   background-position: top center, top center;
+
+  @media (min-resolution: 2dppx) {
+    background:
+      linear-gradient(to bottom, rgba($bg-main, 0.8) 0%, rgba($bg-main, 0.8) 63%, transparent 50%),
+      url("/images/cat-background-mobile@2x.png");
+    background-size: cover, 320px 302px;
+    background-position: top center, top center;
+    background-repeat: no-repeat;
+  }
 }
 
 .basic__button {
