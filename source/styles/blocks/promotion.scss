@@ -25,6 +25,7 @@
   margin: 0;
   text-align: center;
   padding-bottom: 24px;
+  padding-right: 38px;
 }
 
 .promotion__input {
@@ -80,7 +81,7 @@
 
 .promotion__title-wrapper {
   position: relative;
-  width: 100%;
+  width: 100vw;
 
   &::before {
     content: "";
@@ -97,7 +98,7 @@
   .promotion__wrapper {
     display: flex;
     flex-flow: column wrap;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     margin-bottom: 80px;
   }
@@ -110,26 +111,25 @@
   .promotion__title-wrapper {
     position: relative;
     width: 100%;
-    margin-left: 110px;
 
     &::before {
       content: "";
       background: $bg-main;
-      width: calc(100vw - 27% - 80px);
+      width: calc(100vw - 30% - 79px);
       height: 2px;
       position: absolute;
       top: 53%;
-      left: calc(32% + 40px);
+      left: calc(35% + 40px);
     }
 
     &::after {
       content: "";
       background: $bg-main;
-      width: calc(100vw - 49% - 40px);
+      width: calc(100vw - 90% - 47px);
       height: 2px;
       position: absolute;
       top: 53%;
-      right: calc(100% + 40px);
+      right: calc(91% + 40px);
     }
   }
 
@@ -145,6 +145,7 @@
     padding-top: 80px;
     padding-bottom: 66px;
     width: 202px;
+    padding-left: 70px;
   }
 
   .promotion__text {
@@ -182,6 +183,7 @@
     padding-top: 96px;
     padding-bottom: 72px;
     width: 253px;
+    padding-left: 0;
   }
 
   .promotion__title-wrapper {

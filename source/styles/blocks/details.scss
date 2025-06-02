@@ -33,7 +33,7 @@
     font-size: 280px;
     line-height: 1;
     color: $bg-secondary;
-    z-index: 1;
+    z-index: -1;
   }
 }
 
@@ -110,45 +110,42 @@
 
   .details__item--healthy {
     background-image: url("../../icons/stack.svg#leaf-tablet");
-    background-repeat: no-repeat, no-repeat;
-    background-position: 0 42px, right 50px top 41px;
-    background-size: 80px 80px, 70px 227px;
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
     height: auto;
   }
 
   .details__item--water {
     background-image: url("../../icons/stack.svg#water-tablet");
-    background-position: 0 41px, right 15px top 38px;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 80px 80px, 111px 231px;
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
     height: auto;
   }
 
   .details__item--food {
     background-image: url("../../icons/stack.svg#eat-tablet");
-    background-position: 0 40px, right 14px top 39px;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 80px 80px, 113px 230px;
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
     height: auto;
   }
 
   .details__item--result {
     background-image: url("../../icons/stack.svg#clock-tablet");
-    background-position: 0 40px, right 4px top 42px;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 80px 80px, 120px 225px;
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
     height: auto;
   }
 
   .details__item {
     margin: 0;
     padding: 0;
+    background-position: left top 40px;
   }
 
   .details__description {
     width: 245px;
     padding: 0;
-    padding-top: 153px;
+    padding-top: 156px;
   }
 }
 
@@ -180,9 +177,11 @@
 
   .details__item {
     width: 250px;
-  }
-
-  .details__item--healthy {
-    background-position: 0 40px, right 50px top 41px;
+    background-position: left top 45px;
   }
 }
+
+//   .details__item--healthy {
+//     background-position: 0 40px, right 50px top 41px;
+//   }
+// }
