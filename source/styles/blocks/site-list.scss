@@ -36,6 +36,16 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .main-nav--close .site-list__item {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
@@ -44,6 +54,10 @@
     gap: 33px;
     padding-top: 35px;
     position: relative;
+    left: 0;
+  }
+
+  .site-list--catalog {
     left: 4px;
   }
 
@@ -94,6 +108,7 @@
   .site-list--catalog {
     background-color: $f-highlighted;
     padding-right: 3px;
+    left: 0;
   }
 
   .site-list__link {

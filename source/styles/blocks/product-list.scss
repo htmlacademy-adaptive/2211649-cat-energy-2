@@ -182,6 +182,7 @@
     text-align: center;
     background-color: $bg-secondary;
     justify-content: unset;
+    margin-bottom: 19px;
 
     &::before {
       content: none;
@@ -253,7 +254,6 @@
   .product-list__button {
     font-size: 16px;
     line-height: 20px;
-    width: 250px;
     padding: 10px 95px;
     margin-bottom: 40px;
     margin-left: -3px;
@@ -323,7 +323,6 @@
   .product-list__button {
     padding: 10px 53px 10px 55px;
     margin: 0;
-    width: 169px;
   }
 
   .product-list__item--add {

@@ -12,9 +12,3 @@
   flex: 1 0 auto;
   position: relative;
 }
-
-@media (max-width: $mobile-width-only) {
-  .page__body--no-js .basic__wrapper {
-    margin-top: 202px;
-  }
-}

@@ -85,12 +85,12 @@
 
   &::before {
     content: "";
-    background: #68b738;
-    width: calc(100vw - 24% - 144px);
+    background: $bg-main;
+    width: calc(-24% - 136px + 100vw);
     height: 2px;
     position: absolute;
     top: 52%;
-    left: calc(51% + 49px);
+    left: calc(45% + 49px);
   }
 }
 
