@@ -1,5 +1,5 @@
 .programms {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .programms__list {
@@ -121,6 +121,9 @@
     flex-wrap: wrap;
     width: 704px;
     margin: 0 auto;
+    margin-bottom: -54px;
+    position: relative;
+    bottom: 52px;
   }
 
   .programms__wrapper {
@@ -197,6 +200,7 @@
   }
 
   .programms__list {
+    position: unset;
     display: flex;
     flex-wrap: wrap;
     width: 1220px;

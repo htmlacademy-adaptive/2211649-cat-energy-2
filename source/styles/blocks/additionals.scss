@@ -48,15 +48,15 @@
 .additionals__title-wrapper {
   position: relative;
 
-  &::before {
-    content: "";
-    background: $bg-main;
-    width: calc(100vw - 76% - 40px);
-    height: 2px;
-    position: absolute;
-    top: 17%;
-    left: calc(76% + 40px);
-  }
+  // &::before {
+  //   content: "";
+  //   background: $bg-main;
+  //   width: calc(100vw - 76% - 40px);
+  //   height: 2px;
+  //   position: absolute;
+  //   top: 17%;
+  //   left: calc(76% + 40px);
+  // }
 }
 
 @media (min-width: $tablet-width) {
@@ -103,11 +103,11 @@
     &::before {
       content: "";
       background: $bg-main;
-      width: calc(100vw - 53% - 35px);
+      width: calc(51vw + 2% - 44px);
       height: 2px;
       position: absolute;
       top: 42%;
-      left: calc(48% + 40px);
+      left: calc(45% + 63px);
     }
 
     &::after {

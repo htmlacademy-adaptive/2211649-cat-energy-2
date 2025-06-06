@@ -37,12 +37,14 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-nav--close .site-list__item {
-    display: none;
-  }
+  .site-list__item {
+    .main-nav--close & {
+      display: none;
+    }
 
-  .main-nav--nojs .site-list__item {
-    display: block;
+    .main-nav--nojs & {
+      display: block;
+    }
   }
 }
 
