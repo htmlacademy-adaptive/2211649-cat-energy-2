@@ -2,15 +2,15 @@
   position: relative;
   background:
     linear-gradient(to bottom, rgba($bg-main, 0.8) 0%, rgba($bg-main, 0.8) 63%, transparent 50%),
-    url("/images/cat-background-mobile@1x.png");
+    url("/images/cat-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover, 320px 302px;
   background-position: top center, top center;
 
   @media (min-resolution: 2dppx) {
     background:
-      linear-gradient(to bottom, rgba($bg-main, 0.8) 0%, rgba($bg-main, 0.8) 63%, transparent 50%),
-      url("/images/cat-background-mobile@2x.png");
+      linear-gradient(to bottom, rgba($bg-main, 0.8) 0%, rgba($bg-main, 0.8) 65.5%, transparent 50%),
+      url("/images/cat-background-mobile@2x.jpg");
     background-size: cover, 320px 302px;
     background-position: top center, top center;
     background-repeat: no-repeat;
@@ -18,13 +18,14 @@
 }
 
 .basic__button {
+  display: block;
   text-align: center;
   text-decoration: none;
   padding: 10px 64px;
+  width: 152px;
   border: none;
   transform: translateX(7%);
   cursor: pointer;
-  width: 280px;
 
   &:hover {
     background-color: $bg-main-dim;
@@ -87,9 +88,11 @@
   }
 
   .basic__wrapper {
-    position: relative;
     width: 708px;
     margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    position: unset;
   }
 
   .basic__title {
@@ -117,11 +120,12 @@
   }
 
   .basic__button {
-    position: absolute;
+    position: relative;
     padding: 14px 26px;
-    top: 268px;
     left: 74px;
-    width: 242px;
+    bottom: 577px;
+    margin-left: -3;
+    width: 190px;
   }
 }
 
@@ -136,7 +140,11 @@
 
   .basic__wrapper {
     width: 1220px;
-    min-height: 559px;
+    min-height: 577px;
+    display: flex;
+    flex-flow: column wrap;
+    position: unset;
+    gap: 15px;
   }
 
   .basic__title {
@@ -146,17 +154,20 @@
 
   .basic__description {
     padding-left: 80px;
+    padding-bottom: 22px;
   }
 
   .basic__button {
-    position: absolute;
+    position: unset;
     top: 321px;
     left: 64px;
+    width: 191px;
+    margin-left: 63px;
   }
 
   .basic__logo {
     position: absolute;
     left: 448px;
-    top: 9px;
+    top: 26px;
   }
 }

@@ -16,7 +16,7 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     position: relative;
-    right: 24px;
+    right: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,6 +34,26 @@
     padding-left: 7px;
     position: relative;
     top: -16px;
+    left: -17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -16px;
+  }
+}
+
+.logo__img--catalog {
+  @media (min-width: $tablet-width) {
+    right: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 20px;
+  }
+}
+
+.logo__text--catalog {
+  @media (min-width: $tablet-width) {
     left: -24px;
   }
 

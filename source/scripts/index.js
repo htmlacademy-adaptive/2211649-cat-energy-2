@@ -2,7 +2,6 @@
 /* global ymaps */
 const navMain = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-nav__toggle');
-document.body.classList.remove('page__body--no-js');
 
 navMain.classList.remove('main-nav--nojs');
 

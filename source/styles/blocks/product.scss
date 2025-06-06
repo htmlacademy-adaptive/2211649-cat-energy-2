@@ -1,5 +1,5 @@
 .product__text {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -41,11 +41,11 @@
   width: 280px;
   justify-content: space-between;
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 
 .product__button {
-  padding: 10px 110px;
+  padding: 9px 109px;
   margin-bottom: 19px;
 
 
@@ -71,11 +71,11 @@
 
 @media (min-width: $tablet-width) {
   .product__button {
-    padding: 10px 285px;
+    padding: 9px 285px;
     margin-left: 38px;
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 27px;
+    margin-bottom: 28px;
   }
 
   .product__text {
@@ -86,10 +86,6 @@
     &::before {
       content: none;
     }
-  }
-
-  .product-list__item {
-    margin-bottom: 19px;
   }
 
   .product__description {
@@ -131,11 +127,10 @@
 
 @media (min-width: $desktop-width) {
   .product__button {
-    padding: 10px 91px;
-    margin-left: 16px;
     margin-top: 15px;
-    margin-bottom: 15px;
-    width: 244px;
+    margin-bottom: 16px;
+    margin-left: 19px;
+    padding: 10px 91px;
   }
 
   .product__text {
@@ -143,11 +138,15 @@
   }
 
   .product__content {
+    position: relative;
+    top: 3px;
     padding: 0;
-    padding-right: 25px;
+    padding-right: 27px;
   }
 
   .product__price {
+    position: relative;
+    left: 3px;
     padding: 0;
   }
 
