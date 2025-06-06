@@ -83,24 +83,36 @@
   position: relative;
   width: 100vw;
 
-  &::before {
-    content: "";
-    background: $bg-main;
-    width: calc(-24% - 136px + 100vw);
-    height: 2px;
-    position: absolute;
-    top: 52%;
-    left: calc(45% + 49px);
-  }
+  // &::before {
+  //   content: "";
+  //   background: $bg-main;
+  //   width: calc(-24% - 136px + 100vw);
+  //   height: 2px;
+  //   position: absolute;
+  //   top: 52%;
+  //   left: calc(45% + 49px);
+  // }
 }
 
 @media (min-width: $tablet-width) {
   .promotion__wrapper {
     display: flex;
     flex-flow: column wrap;
-    width: 100%;
     justify-content: center;
     margin-bottom: 80px;
+
+    position: relative;
+    width: 100%;
+
+    &::before {
+      content: "";
+      background: $bg-main;
+      width: calc(50vw + 10% - 5px);
+      height: 2px;
+      position: absolute;
+      top: 29%;
+      left: calc(44% - 26px);
+    }
   }
 
   .promotion__form {
@@ -110,17 +122,8 @@
 
   .promotion__title-wrapper {
     position: relative;
-    width: 100%;
-
-    &::before {
-      content: "";
-      background: $bg-main;
-      width: calc(100vw - 30% - 79px);
-      height: 2px;
-      position: absolute;
-      top: 53%;
-      left: calc(35% + 40px);
-    }
+    width: 768px;
+    margin: 0 auto;
 
     &::after {
       content: "";
@@ -134,7 +137,8 @@
   }
 
   .promotion__container {
-    margin-left: 68px;
+    width: 632px;
+    margin: 0 auto;
   }
 
   .promotion__title {
@@ -175,6 +179,10 @@
   .promotion__wrapper {
     width: 1220px;
     margin: 0 auto;
+
+    &::before {
+      content: none;
+    }
   }
 
   .promotion__title {
@@ -192,11 +200,11 @@
     &::before {
       content: "";
       background: $bg-main;
-      width: calc(100vw - 30% - 37px);
+      width: calc(100vw - 30% - 172px);
       height: 2px;
       position: absolute;
       top: 55%;
-      left: calc(50% - 316px);
+      left: calc(50% - 91px);
     }
 
     &::after {
@@ -211,12 +219,12 @@
   }
 
   .promotion__container {
-    margin-left: 0;
+    width: 755px;
   }
 
   .promotion__text {
     width: 653px;
-    padding-left: 285px;
+    padding-left: 52px;
   }
 
   .promotion__form {

@@ -30,6 +30,8 @@
   .main-header__logo-container {
     align-content: center;
     width: 179px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .main-header__nav-container {
@@ -45,7 +47,7 @@
       linear-gradient(rgba($bg-main, 0.8), rgba($bg-main, 0.8)),
       url("/images/background-cat@1x.jpg");
     background-repeat: no-repeat;
-    background-size: cover, 1024px 694px;
+    background-size: cover, 1042px 694px;
     background-position: bottom left 50vw;
 
     @media (min-resolution: 2dppx) {
@@ -66,10 +68,12 @@
   .main-header__logo-container {
     width: 206px;
     margin-left: 19px;
+    margin-top: 21px;
   }
 
   .main-header__nav-container {
     width: 500px;
-    margin-left: 467px;
+    margin-left: 705px;
+    position: absolute;
   }
 }
