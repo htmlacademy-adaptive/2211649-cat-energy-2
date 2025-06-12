@@ -35,11 +35,11 @@
 
 .slider__container {
   position: relative;
-  width: 287px;
+  width: 280px;
   height: 256px;
   margin: 0 auto;
   top: -4px;
-  right: 1px;
+  right: 3px;
 
   @media (min-width: $tablet-width) {
     width: 560px;
@@ -86,7 +86,7 @@
 .slider__input {
   position: absolute;
   top: 0;
-  left: -3px;
+  left: 0;
   width: 100%;
   height: 100%;
 
@@ -102,7 +102,7 @@
   width: 40px;
   height: 40px;
   background-color: $f-highlighted;
-  border: 2px solid $f-average;
+  border: 1px solid $f-average;
   background-image: url("../../icons/slider.svg");
   border-radius: 50%;
   translate: -50% -50%;
@@ -122,6 +122,8 @@
 
   &:hover {
     color: $bg-main;
+    border: none;
+    background-image: url("../../icons/slider-hover.svg");
 
     &::after {
       background-color: $bg-main;
@@ -130,7 +132,9 @@
   }
 
   &:active {
-    border-color: rgba($bg-main-dim, 0.6);
+    color: $bg-main-dim;
+    border: none;
+    background-image: url("../../icons/slider-active.svg");
 
     &::after {
       background-color: rgba($bg-main-dim, 0.6);
@@ -139,6 +143,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    border: 2px solid $f-average;
+
     &::after {
       top: -236px;
       height: 236px;
@@ -153,8 +159,16 @@
 
     &:active {
       &::after {
+        background-color: rgba($bg-main-dim, 0.6);
         box-shadow: 0 274px 0 0 rgba($bg-main-dim, 0.6);
       }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      top: -236px;
+      left: 16px;
     }
   }
 }

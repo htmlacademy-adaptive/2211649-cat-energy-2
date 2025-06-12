@@ -22,11 +22,14 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
+    mapElement.style.height = '362px';
+
     function setMapHeight() {
-      if (window.innerWidth >= 768) {
-        mapElement.style.height = '400px';
-      } else {
+      const width = window.innerWidth;
+      if (width >= 320 && width < 768) {
         mapElement.style.height = '362px';
+      } else if (width >= 768) {
+        mapElement.style.height = '400px';
       }
     }
 
