@@ -45,7 +45,12 @@
     position: relative;
     background:
       linear-gradient(rgba($bg-main, 0.8), rgba($bg-main, 0.8)),
-      url("/images/background-cat@1x.jpg");
+      image-set(
+        url("/images/background-cat@1x.webp") type("image/webp") 1x,
+        url("/images/background-cat@2x.webp") type("image/webp") 2x,
+        url("/images/background-cat@1x.jpg") type("image/jpeg") 1x,
+        url("/images/background-cat@2x.jpg") type("image/jpeg") 2x
+      );
     background-repeat: no-repeat;
     background-size: cover, 1042px 694px;
     background-position: bottom left 50vw;
@@ -53,7 +58,10 @@
     @media (min-resolution: 2dppx) {
       background:
         linear-gradient(rgba($bg-main, 0.8), rgba($bg-main, 0.8)),
-        url("/images/background-cat@2x.jpg");
+        image-set(
+          url("/images/background-cat@2x.webp") type("image/webp") 2x,
+          url("/images/background-cat@2x.jpg") type("image/jpeg") 2x
+        );
       background-repeat: no-repeat;
       background-size: cover, 1024px 694px;
       background-position: bottom left 50vw;

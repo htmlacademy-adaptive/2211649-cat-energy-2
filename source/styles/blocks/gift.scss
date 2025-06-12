@@ -14,6 +14,20 @@
       url("/images/catalog-cat@2x.jpg");
     background-size: cover;
   }
+
+  @supports (background-image: url("/images/catalog-cat@1x.webp")) {
+    background:
+      linear-gradient(rgba($bg-main, 0.8), rgba($bg-main, 0.8)),
+      url("/images/catalog-cat@1x.webp");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background:
+        linear-gradient(rgba($bg-main, 0.8), rgba($bg-main, 0.8)),
+        url("/images/catalog-cat@2x.webp");
+      background-size: cover;
+    }
+  }
 }
 
 .gift__text {
@@ -59,6 +73,20 @@
         url("/images/catalog-cat-tablet@2x.jpg");
       background-size: cover;
     }
+
+    @supports (background-image: url("/images/catalog-cat-tablet@1x.webp")) {
+      background:
+        linear-gradient(rgba($bg-main, 0.8), rgba($bg-main, 0.8)),
+        url("/images/catalog-cat-tablet@1x.webp");
+      background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        background:
+          linear-gradient(rgba($bg-main, 0.8), rgba($bg-main, 0.8)),
+          url("/images/catalog-cat-tablet@2x.webp");
+        background-size: cover;
+      }
+    }
   }
 
   .gift__text {
@@ -96,6 +124,20 @@
         linear-gradient(rgba($bg-main, 0.8), rgba($bg-main, 0.8)),
         url("/images/catalog-cat-desktop@2x.jpg");
       background-size: cover;
+    }
+
+    @supports (background-image: url("/images/catalog-cat-desktop@1x.webp")) {
+      background:
+        linear-gradient(rgba($bg-main, 0.8), rgba($bg-main, 0.8)),
+        url("/images/catalog-cat-desktop@1x.webp");
+      background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        background:
+          linear-gradient(rgba($bg-main, 0.8), rgba($bg-main, 0.8)),
+          url("/images/catalog-cat-desktop@2x.webp");
+        background-size: cover;
+      }
     }
   }
 
